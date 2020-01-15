@@ -1,0 +1,11 @@
+div:hover{
+    font-weight: bolder;
+    color: blue;
+    font-size: x-large;
+ }
+
+ div{
+
+    border: black;
+    border-style: solid;
+ }

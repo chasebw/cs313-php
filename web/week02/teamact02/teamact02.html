@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="teamact02.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="teamact02.css">
+    <title>Team Activity 2</title>
+</head>
+
+<body>
+    <div class="row">
+        <div id="div1" class="col-sm-4">Div uno</div>
+        <div id="div2" class="col-sm-4">Div dos</div>
+        <div id="div3" class="col-sm-4">Div tres</div>
+    </div>
+
+    <button type="button" id="button" onclick="clicked()">Click Me</button>
+    <p>Blue<input type="radio" name="color" onclick="makeGreen()"></p>
+    <p>Red<input type="radio" name="color" onclick="makeRed()"></p>
+    <p>Green<input type="radio" name="color" onclick="makeBlue()"></p>
+    <p><input type="text" id="text1"><button type="button" onclick="changeColor()">Change Color</button></p>
+    <p><button type="button" onclick="toggle()">Toggle Visible Div1</button></p>
+    <script>
+
+        function toggle() {
+
+            $("#div3").fadeToggle();
+
+        }
+
+    </script>
+</body>
+
+</html>
