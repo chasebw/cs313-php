@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+   }
+
+  html {
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  header {
+    background: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  h1{
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: #1E88E5!important;
+    opacity: .91;
+    color: white;
+  }
+
+  /* Add your flexbox CSS below here */
+  section {
+    display: flex;
+  }
+
+  article {
+    flex: 1 200px;
+  }
+
+  article:nth-of-type(3) {
+    flex: 3 200px;
+    display: flex;
+    flex-flow: column;
+  }
+
+  article:nth-of-type(3) div:first-child {
+    flex: 1 100px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+  color: #d0a37a;
+  background-color: #1E88E5;
+  box-shadow: 0 0 20px 9px black;
+  max-width: 100%;
+  text-align: center;
+  font-size: calc(10px + 1vw);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+color: white;
+padding: 14px 20px;
+text-decoration: none;
+text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+background-color: #4DD0E1;
+color: black;
+}
+
+.navbar > div{
+margin: 0;
+padding: 0;
+}
+
+  button {
+    flex: 1 auto;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  
+.main_image{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.top{
+    position: fixed;
+    width: 100%;
+}
+
+.heading{
+    color: #000!important;
+    font-size:calc(25px + 3vw);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: lightslategrey;
+    border-style: double;
+    padding: 0.5em;
+    border-width: thick;
+    background-color: whitesmoke;
+    text-align: center;
+
+}
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    /* This will center items */
+    /*center and space around space between are common*/
+    justify-content: space-around;
+    align-items: center;
+    /* flex direction: row<*/
+    /*flex wrap: wrap<*/
+}
+
+.flex-container > div{
+    flex: 1;
+    margin: 0.5em;
+    position: relative;
+    text-align: center;
+}
+
+.mobile_images{
+    display: flex;
+    padding: 0.5em;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px)
+{
+    .flex-container{display: none;}
+
+}
+
+@media screen and (min-width: 700px)
+{
+    .mobile_images{display: none;}
+
+}
+
+@media only screen and (max-width: 700px) {
+    .flex-container {
+      max-width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .flex-container {
+      width: 100%;
+    }
+  }
+
+
+img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.top_left{
+    position: absolute;
+    padding: 8px 16px!important;
+    color: ivory;
+    border: ivory;
+    left: 16px;
+    opacity: 0.75;
+    font-size:calc(12px + 1vw);
+    color:#fff!important;
+    background-color:#000!important
+}
+
+.image1,.image2,.image3,.image4{
+    border: ivory;
+    border-style: double;
+}
+
+.main_image_text{
+    background-color: black;
+    opacity: .75;
+    padding: 8px 16px;
+    box-sizing: inherit;
+}
+
+.top_left_nav,.top_left_nav {
+    overflow: hidden;
+    width: 50%;    
+}
+
+.top_left_nav{
+    position: relative;
+}
+
+.top_right_nav{
+    text-align: right;
+    width: 50%;
+}
+
+.head{
+    width: auto;
+}
+
+.icon{
+    width: 2%;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+
+.icon_hamburger{
+    font-size: 5px;
+
+}
+
+.flex_container{
+    display: flex;
+    max-width: 100%;
+
+}
+
+
+.content_1_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+  width: 98%;
+  margin: auto;
+}
+
+
+  @media screen and (max-width: 700px) {
+.row, .navbar {   
+  flex-direction: column;
+}
+
+
+}
