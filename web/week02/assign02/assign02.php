@@ -16,15 +16,8 @@
 
 <body>
 
- <!-- <div class="navbar">
-    
-    <a href="#">Home</a>
-    <a href="./../../index.html">Projects</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
--->
 
+<!-- php to include navbar -->
   <?php 
 
   include './../../shared/navbar.html';
