@@ -10,12 +10,45 @@
 <body>
 
     <div class="navbar">
-    
-        <a href="#">Home</a>
-        <a href="./../../index.html">Projects</a>
+    <!-- Borrowed from w3schools-->
+    <a href="#">Home</a>
+
+          <div class="dropdown">
+            <button onmouseover="dropDown()" class="dropbtn">Projects</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="./../../index.html">Project List</a>  
+              <a href="#">Week02</a>
+              <a href="./../../week03/week03.html">Week03</a>
+            </div>
+          </div>
+
+       
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-      </div>
+      </div> 
+
+
+      <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function dropDown() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
     
 </body>
 </html>
