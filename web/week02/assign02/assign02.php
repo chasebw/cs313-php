@@ -105,11 +105,31 @@
       <i class="fa fa-linkedin w3-hover-opacity"></i>
     </div>
     <p>Contact me <a href="" title="wil16056@byui.edu" target="_blank" class="w3-hover-text-green">wil16056@byui.edu</a></p>
+    <p> Like my Page :)
+      <!-- Code for cool like found on w3schools--->
+        <a class="btn btn-info btn-lg" onclick="liked()">
+          <span class="glyphicon glyphicon-thumbs-up"></span> Like
+        </a>
+      </p> 
+      <p id="like"> </p>
   </footer>
 
 
 
 
 </body>
+
+<script>
+
+var i = 0;
+function liked()
+{
+  i+=1;
+
+  document.getElementById("like").innerHTML = "Likes : " + i;
+  console.log("Like received")
+}
+
+</script>
 
 </html>
