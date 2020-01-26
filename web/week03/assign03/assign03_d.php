@@ -41,10 +41,10 @@ $name = array("buddha"=>"Ancient Buddha","buffalo"=>"Exotic Buffalo","tree"=>"Lo
 <body>
 
     <header class="w3-container w3-teal">
-        <h1>Your has been confirmed and will be sent to the following address below: </h1>
+        <h1>Your order has been confirmed and will be sent to the following address below: </h1>
     </header>
     <header class="w3-container w3-teal">
-        <h1>Your Purchased items are listed below:</h1>
+        <h1>Your purchased items are listed below:</h1>
     </header>
 
     <form id="form" action="assign12_a.php" method="GET">
