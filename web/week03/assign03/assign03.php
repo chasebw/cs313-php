@@ -77,7 +77,7 @@ session_start();
     <div class="w3-row-padding w3-padding-16 w3-center" id="items">
       <div class="w3-quarter">
         <img src="ancient-buddha-art piece.jpg" alt="buddha" style="width:100%">
-        <h3>$5000 - Ancient Buddha art piece</h3>
+        <h3>$5000 - Ancient Buddha Art Piece</h3>
         <p>This piece is an essential part of japanese history.</p>
         <form action="" id="form1" method="POST">
           <p class="add w3-container w3-teal w3-hover-blue" onclick="checkit('item1')">Add item to Cart</p>
@@ -92,7 +92,7 @@ session_start();
       </div>
       <div class="w3-quarter">
         <img src="elegant_tree.jpg" alt="tree" style="width:100%">
-        <h3>$200 - Elegant Australian Lone Tree</h3>
+        <h3>$200 - A Friendly, Elegant Australian Lone Tree</h3>
         <p>This tree is healthy and has the ability to produce oxygen from carbon dioxide.</p>
         <p class="add w3-container w3-teal w3-hover-blue" onclick="checkit('item3')">Add item to Cart</p>
         <input type="checkbox" name="item3" value="tree" id="item3" onchange="if(ischeck(this)) submitform()">
