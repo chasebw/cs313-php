@@ -84,7 +84,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                         <li>dude</li>
                             <?php  $i=0;     ?>
                             <?php foreach ($excercise_name as $name) {
-                                echo "<li>" . $name . " || Explain: " . $excercise_explain[$i] . "|| Record Date:". $record_date[$i] . "</li>";
+                                echo "<li>" . $name . " || Explain: " . /*$excercise_explain[$i] . */  "|| Record Date:". /*$record_date[$i] .*/ "</li>";
                                 $i++;
                             }
                             ?>
@@ -93,7 +93,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                 </tr>
                 <tr class="w3-hover-green">
                     <td>Total Cost:</td>
-                    <td> <?= "$" . number_format($total, 2) ?> </td>
+                    <td> hi </td>
                 </tr>
 
             </table>
