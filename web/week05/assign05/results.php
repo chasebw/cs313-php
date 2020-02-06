@@ -83,7 +83,7 @@ $statement->execute();
                 <td>Your Journal Items are:</td>
                 <td>
                     <ol>
-                    
+
                         <?php $i = 0;     ?>
                         <?php while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                             // The variable "row" now holds the complete record for that
@@ -102,7 +102,7 @@ $statement->execute();
                 </td>
             </tr>
             <tr class="w3-hover-green">
-                <td>Total Cost:</td>
+                <td>Total something...:</td>
                 <td> hi </td>
             </tr>
 
