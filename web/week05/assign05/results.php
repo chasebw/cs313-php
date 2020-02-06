@@ -7,8 +7,9 @@
 *   PostgreSQL database from PHP.
 ***********************************************************/
 
-//require "..\..\db\dbConnect.php";
-//$db = get_db();
+require ".\..\..\db\dbConnect.php";
+
+$db = get_db();
 
 ?>
 
