@@ -21,18 +21,18 @@ Later going to have to join table and depending on the username of the user we c
 get the data for that user instead of contact = 1 here or some otehr method
 
 */
-$statement = $db ->prepare("SELECT first_name, last_name FROM contact WHERE contact_id = 1");
-$statement->execute();
+$statement1 = $db ->prepare("SELECT first_name, last_name FROM contact WHERE contact_id = 1");
+$statement1->execute();
 
-$row = $statement -> fetch(PDO::FETCH_ASSOC);
-$first_name = $row['first_name'];
-$last_name = $row['last_name'];
-
-
+$row1 = $statement1 -> fetch(PDO::FETCH_ASSOC);
+$first_name = $row1['first_name'];
+$last_name = $row1['last_name'];
 
 
 
-$statement = $db->prepare("SELECT excercise_name,excercise_explain,record_date FROM excercise_log");
+
+
+$statement = $db->prepare("SELECT excercise_name,excercise_explain,record_date FROM excercise_log WHERE user_id = 1");
 $statement->execute();
 
 // Go through each result
@@ -44,7 +44,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	$excercise_name = $row['excercise_name'];
 	$excercise_explain = $row['excercise_explain'];
 	$record_date = $row['record_date'];
-	echo "<p><strong>$excercise_name $excercise_explain:$record_date</strong> - \"\"</p>";
+	echo "<p><strong>$excercise_name $excercise_explain:</strong> -$record_date</p>";
 }
 
 ?>
