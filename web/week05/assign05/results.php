@@ -86,7 +86,7 @@ $statement->execute();
 
                         <li>Hi</li>
                         <li>dude</li>
-                        
+
                         <?php $i = 0;     ?>
                         <?php while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                             // The variable "row" now holds the complete record for that
@@ -95,7 +95,8 @@ $statement->execute();
                             $excercise_name = $row['excercise_name'];
                             $excercise_explain = $row['excercise_explain'];
                             $record_date = $row['record_date'];
-                            echo "<li>" . "Name". $first_name . $last_name  . " || Excercise-Content: " . $excercise_explain .  "|| Record Date:" . $record_date . "</li>";
+                            echo "<li>" . "Name ". $first_name . $last_name  . "|| Excercise Name: ". $excercise_name .
+                             " || Excercise-Content: " . $excercise_explain .  "|| Record Date:" . $record_date . "</li>";
                         }
 
 
