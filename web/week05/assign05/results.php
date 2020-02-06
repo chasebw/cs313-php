@@ -7,7 +7,7 @@
 *   PostgreSQL database from PHP.
 ***********************************************************/
 
-require "C:\Users\chase\cs313-php\web\db\dbConnect.php";
+require "..\..\db\dbConnect.php";
 $db = get_db();
 
 ?>
