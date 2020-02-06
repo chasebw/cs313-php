@@ -37,15 +37,17 @@ $last_name = $row1['last_name'];
 $statement = $db->prepare("SELECT excercise_name,excercise_explain,record_date FROM excercise_log WHERE user_id = 1");
 $statement->execute();
 
+
+
 // Go through each result
-while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+/*while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
     // The variable "row" now holds the complete record for that
     // row, and we can access the different values based on their
     // name
     $excercise_name = $row['excercise_name'];
     $excercise_explain = $row['excercise_explain'];
     $record_date = $row['record_date'];
-}
+}*/
 
 ?>
 
@@ -84,6 +86,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 
                         <li>Hi</li>
                         <li>dude</li>
+                        
                         <?php $i = 0;     ?>
                         <?php while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                             // The variable "row" now holds the complete record for that
@@ -92,7 +95,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                             $excercise_name = $row['excercise_name'];
                             $excercise_explain = $row['excercise_explain'];
                             $record_date = $row['record_date'];
-                            echo "<li>" . $first_name . $last_name  . " || Excercise-Content: " . $excercise_explain .  "|| Record Date:" . $record_date . "</li>";
+                            echo "<li>" . "Name". $first_name . $last_name  . " || Excercise-Content: " . $excercise_explain .  "|| Record Date:" . $record_date . "</li>";
                         }
 
 
