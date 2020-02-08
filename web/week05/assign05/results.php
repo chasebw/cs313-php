@@ -18,12 +18,12 @@ $db = get_db();
 
  $workout = "pullups";
 
-// if (isset($_POST["workout_type"])) {
-//     if ($_POST["workout_type"] == 'pushups' || $_POST["workout_type"] == 'pullups') {
-//         $workout = $_POST["workout_type"];
+ if (isset($_POST["workout_type"])) {
+     if ($_POST["workout_type"] == 'pushups' || $_POST["workout_type"] == 'pullups') {
+         $workout = $_POST["workout_type"];
 
-//     }
-// }
+     }
+ }
 
 
 ?>
@@ -47,7 +47,7 @@ $last_name = $row1['last_name'];
 
 
 
-
+#Note this statement didn't work with only a single string being input but yo uhave to put the string in quotes
 
 $statement = $db->prepare("SELECT excercise_name,excercise_explain,record_date FROM excercise_log WHERE user_id = 1 AND UPPER(excercise_name) LIKE UPPER('$workout')");
 $statement->execute();
