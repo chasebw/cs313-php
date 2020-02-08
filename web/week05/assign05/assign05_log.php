@@ -28,8 +28,8 @@
 
     <p>For now put 'pushups' or 'pullups' * this will affect database querry</p>
     <label for="workout_type">Workout Type</label>
-    <input type="radio" name="workout_type" value="pushups"  id="workout_type">
-    <input type="radio" name="workout_type" value="pullups"  id="workout_type">
+    <p>Pushups<input type="radio" name="workout_type" value="pushups"  id="workout_type"></p>
+    <p>Pullups<input type="radio" name="workout_type" value="pullups"  id="workout_type"></p>
 
     
    <!-- <input type="text" id="workout" name="workout" placeholder="Workout type"> --->
