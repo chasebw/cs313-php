@@ -118,7 +118,7 @@ $statement->execute();
             </tr>
             <tr class="w3-hover-green">
                 <td>Total something...:</td>
-                <td> hi </td>
+                <td> Notice the workout_type you displayed above is shown </td>
             </tr>
 
         </table>
