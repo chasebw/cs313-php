@@ -16,7 +16,7 @@ $db = get_db();
 
 <?php
 
-$workout = "";
+$workout = "pullups";
 
 if (isset($_POST["workout_type"])) {
     if ($_POST["workout_type"] == 'pushups' || $_POST["workout_type"] == 'pullups') {
