@@ -35,9 +35,8 @@
    <!-- <input type="text" id="workout" name="workout" placeholder="Workout type"> --->
 
 
-
-    <input type="submit" value="Submit">
     <button class="mys"><a style= 'color: white' style="text-decoration: none" href="assign05_login.php">Back to Login</a></button>
+    <input type="submit" value="Submit">
     <!-- Add link back to stuff here-->
   </form>
 </div>
