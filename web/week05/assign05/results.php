@@ -16,7 +16,7 @@ $db = get_db();
 
 <?php
 
-// $workout = "pullups";
+ $workout = "pullups";
 
 // if (isset($_POST["workout_type"])) {
 //     if ($_POST["workout_type"] == 'pushups' || $_POST["workout_type"] == 'pullups') {
@@ -49,7 +49,7 @@ $last_name = $row1['last_name'];
 
 
 
-$statement = $db->prepare("SELECT excercise_name,excercise_explain,record_date FROM excercise_log WHERE user_id = 1 AND UPPER(excercise_name) LIKE UPPER('Pullups')");
+$statement = $db->prepare("SELECT excercise_name,excercise_explain,record_date FROM excercise_log WHERE user_id = 1 AND UPPER(excercise_name) LIKE UPPER($workout)");
 $statement->execute();
 
 
