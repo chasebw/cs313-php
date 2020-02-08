@@ -26,7 +26,7 @@
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
 
-    <p>For now put 'pushups' or 'pullups' * this will affect database querry</p>
+    <p><strong> now put 'pushups' or 'pullups' * this will affect database querry</strong></p>
     <label for="workout_type">Workout Type</label>
     <p>Pushups<input type="radio" name="workout_type" value="pushups"  id="workout_type"></p>
     <p>Pullups<input type="radio" name="workout_type" value="pullups"  id="workout_type"></p>
