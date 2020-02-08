@@ -25,17 +25,19 @@
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <p>For now put 'pushups' or 'pullups' * this will affect database querry</p>
+    <label for="workout_type">Workout Type</label>
+    <input type="radio" name="workout_type" value="pushups"  id="workout_type">
+    <input type="radio" name="workout_type" value="pullups"  id="workout_type">
+
+    
+   <!-- <input type="text" id="workout" name="workout" placeholder="Workout type"> --->
+
+
 
     <input type="submit" value="Submit">
+    <!-- Add link back to stuff here-->
   </form>
 </div>
 
@@ -44,7 +46,3 @@
 
 
 
-
-
-</body>
-</html>

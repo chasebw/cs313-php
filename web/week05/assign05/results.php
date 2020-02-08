@@ -14,6 +14,20 @@ $db = get_db();
 
 ?>
 
+<?php
+
+
+if (isset($_POST["workout_type"])) {
+    if ($_POST["workout_type"] == 'pushups' || $_POST["workout_type"] == 'pushups') {
+        $workout = $_POST["workout_type"];
+
+    }
+}
+
+
+?>
+
+
 
 
 <?php
@@ -34,7 +48,7 @@ $last_name = $row1['last_name'];
 
 
 
-$statement = $db->prepare("SELECT excercise_name,excercise_explain,record_date FROM excercise_log WHERE user_id = 1");
+$statement = $db->prepare("SELECT excercise_name,excercise_explain,record_date FROM excercise_log WHERE user_id = 1 AND UPPER(excercise_name) LIKE UPPER($workout)");
 $statement->execute();
 
 
@@ -92,8 +106,8 @@ $statement->execute();
                             $excercise_name = $row['excercise_name'];
                             $excercise_explain = $row['excercise_explain'];
                             $record_date = $row['record_date'];
-                            echo "<li>" . "Name: ". $first_name . $last_name  . "|| Excercise Name: ". $excercise_name .
-                             " || Excercise-Content: " . $excercise_explain .  "|| Record Date:" . $record_date . "</li>";
+                            echo "<li>" . "Name: " . $first_name . $last_name  . "|| Excercise Name: " . $excercise_name .
+                                " || Excercise-Content: " . $excercise_explain .  "|| Record Date:" . $record_date . "</li>";
                         }
 
 
