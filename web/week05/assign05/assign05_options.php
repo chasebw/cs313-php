@@ -24,7 +24,7 @@
       
       height:auto;
       max-height: 300px; /* Set width to 100% */
-      max-width: 1500px;
+      max-width: 179px;
       margin: auto;
       min-height:200px;
   }
@@ -120,6 +120,34 @@
 
       <div class="item">
         <img src="pic2.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>Heart</h3>
+          <p>Soul</p>
+        </div>      
+      </div>
+    </div>
+
+    <div class="item">
+        <img src="pic3.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>Heart</h3>
+          <p>Soul</p>
+        </div>      
+      </div>
+    </div>
+
+
+    <div class="item">
+        <img src="pic4.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>Heart</h3>
+          <p>Soul</p>
+        </div>      
+      </div>
+    </div>
+
+    <div class="item">
+        <img src="pic5.jpg" alt="Image">
         <div class="carousel-caption">
           <h3>Heart</h3>
           <p>Soul</p>
