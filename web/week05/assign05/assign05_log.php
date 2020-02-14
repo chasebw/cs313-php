@@ -43,7 +43,7 @@ $db = get_db();
       <?php
       
       try{
-        $statement = $db -> prepare('Select excercise_name from excercise_log');
+        $statement = $db -> prepare('Select DISTINCT excercise_name from excercise_log ORDER BY excercise_name');
         $statement -> execute();
         
         while($row = $statement->fetch(PDO::FETCH_ASSOC))
