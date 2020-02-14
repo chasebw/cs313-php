@@ -88,36 +88,6 @@ $statement->execute();
     </header>
 
 
-    <div class="w3-container">
-        <table class="w3-table-all">
-
-            <tr class="w3-hover-blue">
-                <td>Address</td>
-                <td><?= $address ?></td>
-            </tr>
-            <tr class="w3-hover-green">
-                <td>Your Journal Items are:</td>
-                <td>
-                    <ol>
-                    </ol>
-                </td>
-            </tr>
-            <tr class="w3-hover-green">
-                <td>Total something...:</td>
-                <td> Notice the workout_type you displayed above is shown </td>
-            </tr>
-
-        </table>
-
-
-        <p class="w3-container w3-teal confirming">All done</p>
-        <form action="assign03_d.php" method="post">
-            <button><a href="assign05_log.php">Return to Logging</a></button>
-            <button class="mys"><a style='color: white' style="text-decoration: none" href="assign05_options.php">Back to Menu</a></button>
-    </div>
-
-
-
     <div class="container">
         <h2>Your Workouts</h2>
         <p>This table displays your workouts:</p>
@@ -142,24 +112,17 @@ $statement->execute();
                                           "<td>" . $record_date       . "</td>" .  "</tr>";
                         }
                         ?>
-                <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                </tr>
-                <tr>
-                    <td>Mary</td>
-                    <td>Moe</td>
-                    <td>mary@example.com</td>
-                </tr>
-                <tr>
-                    <td>July</td>
-                    <td>Dooley</td>
-                    <td>july@example.com</td>
-                </tr>
             </tbody>
         </table>
     </div>
+
+
+        <p class="w3-container w3-teal confirming">All done</p>
+        <form action="assign03_d.php" method="post">
+            <button><a href="assign05_log.php">Return to Logging</a></button>
+            <button class="mys"><a style='color: white' style="text-decoration: none" href="assign05_options.php">Back to Menu</a></button>
+    </div>
+
 
 </body>
 
