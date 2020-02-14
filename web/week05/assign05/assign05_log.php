@@ -46,10 +46,10 @@ $db = get_db();
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Logout</a></li>
+        <li><a href="assign05_options.php">Home</a></li>
         <li><a href="results.php">View Workouts</a></li>
-        <li><a href="assign05_log.php">Log Workouts</a></li>
+        <li class="active"><a href="assign05_log.php">Log Workouts</a></li>
+        <li><a href="assign05_login.php">Logout</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
