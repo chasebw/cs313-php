@@ -18,11 +18,10 @@ $db = get_db();
 
  $workout = "pullups";
 
- if (isset($_POST["workout_type"])) {
-     if ($_POST["workout_type"] == 'pushups' || $_POST["workout_type"] == 'pullups') {
+ if (isset($_POST["workout_type"])) { 
+     
          $workout = $_POST["workout_type"];
-
-     }
+ 
  }
 
 
@@ -110,8 +109,6 @@ $statement->execute();
                             echo "<li>" . "Name: " . $first_name . $last_name  . "|| Excercise Name: " . $excercise_name .
                                 " || Excercise-Content: " . $excercise_explain .  "|| Record Date:" . $record_date . "</li>";
                         }
-
-
                         ?>
                     </ol>
                 </td>

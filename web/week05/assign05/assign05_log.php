@@ -44,11 +44,6 @@ $db = get_db();
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
 
-    <p><strong> now put 'pushups' or 'pullups' * this will affect database querry</strong></p>
-    <label for="workout">Workout Type</label>
-    <p>Pushups<input type="radio" name="workout_type" value="pushups"  id="workout_type"></p>
-    <p>Pullups<input type="radio" name="workout_type" value="pullups"  id="workout_type"></p>
-
     
     <label for="workout_type">Workout Type</label>
     <select name="workout_type" id="workout_type">
@@ -77,7 +72,7 @@ $db = get_db();
       
     </select>
 
-    <label for="description">description</label>
+    <label for="description">Description</label>
     <textarea name="description" id="" cols="30" rows="10"></textarea>
 
     
