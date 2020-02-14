@@ -125,8 +125,9 @@
           <p>Soul</p>
         </div>      
       </div>
-    </div>
 
+
+      
     <div class="item">
         <img src="pic3.jpg" alt="Image">
         <div class="carousel-caption">
@@ -134,10 +135,8 @@
           <p>Soul</p>
         </div>      
       </div>
-    </div>
 
-
-    <div class="item">
+      <div class="item">
         <img src="pic4.jpg" alt="Image">
         <div class="carousel-caption">
           <h3>Heart</h3>
@@ -154,6 +153,15 @@
         </div>      
       </div>
     </div>
+    </div>
+
+
+   
+
+
+
+
+
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
