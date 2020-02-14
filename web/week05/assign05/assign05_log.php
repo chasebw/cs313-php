@@ -63,14 +63,14 @@ $db = get_db();
       
     </select>
 
-    <label for="description">Description</label> <p>4 sets of 15 repetitions...</p>
+    <label for="description">Description <p>4 sets of 15 repetitions...</p></label> 
     <textarea name="description" id="" cols="30" rows="10" required placeholder="3 sets of 15...."></textarea>
 
     
    <!-- <input type="text" id="workout" name="workout" placeholder="Workout type"> --->
-
-
-    <button class="mys"><a style= 'color: white' style="text-decoration: none" href="assign05_login.php">Back to Login</a></button>
+   <button class="mys"><a style= 'color: white' style="text-decoration: none" href="assign05_options.php">Back to Menu</a></button>
+<button class="mys"><a style= 'color: white' style="text-decoration: none" href="assign05_login.php">Back to Login</a></button>
+    
     <input type="submit" value="Submit">
     <!-- Add link back to stuff here-->
   </form>
