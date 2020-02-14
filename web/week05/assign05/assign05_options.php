@@ -94,10 +94,9 @@
         <li class="active"><a href="#">Home</a></li>
         <li><a href="results.php">View Workouts</a></li>
         <li><a href="assign05_log.php">Log Workouts</a></li>
-        <li><a href="assign05_login.php">Logout</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="assign05_login"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
       </ul>
     </div>
   </div>
