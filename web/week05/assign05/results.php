@@ -95,7 +95,7 @@ $statement->execute();
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="assign05_options.php">Home</a></li>
+        <li><a href="assign05_options.php">Home</a></li>
         <li class="active"><a href="results.php">View Workouts</a></li>
         <li><a href="assign05_log.php">Log Workouts</a></li>
       </ul>
