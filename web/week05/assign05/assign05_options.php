@@ -143,9 +143,9 @@
           <p>Soul</p>
         </div>      
       </div>
-    </div>
 
-    <div class="item">
+
+      <div class="item">
         <img src="pic5.jpg" alt="Image">
         <div class="carousel-caption">
           <h3>Heart</h3>
@@ -153,7 +153,8 @@
         </div>      
       </div>
     </div>
-    </div>
+
+    
 
 
    
