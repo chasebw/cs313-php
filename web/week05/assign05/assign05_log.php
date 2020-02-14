@@ -79,7 +79,7 @@ $db = get_db();
 </nav>
 
 <header class="w3-container w3-teal mar">
-<h3>Excercise Log</h3>
+<h1>Excercise Log</h1>
 </header>
 
 <div class="container">

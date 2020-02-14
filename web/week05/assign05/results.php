@@ -78,35 +78,42 @@ $statement->execute();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        .navbar {
+
+            margin-bottom: 0;
+        }
+    </style>
     <title>Excercise Journal</title>
 </head>
 
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="assign05_options.php">Home</a></li>
-        <li class="active"><a href="results.php">View Workouts</a></li>
-        <li><a href="assign05_log.php">Log Workouts</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="assign05_login.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="assign05_options.php">Home</a></li>
+                    <li class="active"><a href="results.php">View Workouts</a></li>
+                    <li><a href="assign05_log.php">Log Workouts</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="assign05_login.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <header class="w3-container w3-teal">
+    <header class="w3-container w3-teal mar">
         <h1>Excercise Journal</h1>
     </header>
 
@@ -123,28 +130,28 @@ $statement->execute();
                 </tr>
             </thead>
             <tbody>
-                        <?php while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-                            // The variable "row" now holds the complete record for that
-                            // row, and we can access the different values based on their
-                            // name
-                            $excercise_name = $row['excercise_name'];
-                            $excercise_explain = $row['excercise_explain'];
-                            $record_date = $row['record_date'];
-                            echo "<tr>" . "<td>" . $excercise_name    . "</td>" .
-                                          "<td>" . $excercise_explain . "</td>" .
-                                          "<td>" . $record_date       . "</td>" .  "</tr>";
-                        }
-                        ?>
+                <?php while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+                    // The variable "row" now holds the complete record for that
+                    // row, and we can access the different values based on their
+                    // name
+                    $excercise_name = $row['excercise_name'];
+                    $excercise_explain = $row['excercise_explain'];
+                    $record_date = $row['record_date'];
+                    echo "<tr>" . "<td>" . $excercise_name    . "</td>" .
+                        "<td>" . $excercise_explain . "</td>" .
+                        "<td>" . $record_date       . "</td>" .  "</tr>";
+                }
+                ?>
             </tbody>
         </table>
     </div>
 
 
-        <p class="w3-container w3-teal confirming">All done</p>
-        <form action="assign03_d.php" method="post">
-            <button type="button" class="btn btn-primary"><a href="assign05_log.php">Return to Logging</a></button>
-            <button type="button" class="btn btn-primary"><a href="assign05_options.php">Back to Menu</a></button>
-    </div>
+    <p class="w3-container w3-teal confirming">All done</p>
+    <form action="assign03_d.php" method="post">
+        <button type="button" class="btn btn-primary"><a href="assign05_log.php">Return to Logging</a></button>
+        <button type="button" class="btn btn-primary"><a href="assign05_options.php">Back to Menu</a></button>
+        </div>
 
 
 </body>
