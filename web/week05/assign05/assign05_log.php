@@ -63,7 +63,9 @@ $db = get_db();
   </div>
 </nav>
 
+<header class="w3-container w3-teal">
 <h3>Excercise Log</h3>
+</header>
 
 <div class="container">
   <form method='POST' action = insert.php>
