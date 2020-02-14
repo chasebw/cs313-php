@@ -77,6 +77,9 @@ $db = get_db();
       
     </select>
 
+    <label for="description">description</label>
+    <textarea name="description" id="" cols="30" rows="10"></textarea>
+
     
    <!-- <input type="text" id="workout" name="workout" placeholder="Workout type"> --->
 
