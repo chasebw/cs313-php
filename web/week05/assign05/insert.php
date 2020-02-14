@@ -11,7 +11,7 @@
 
     try{
 
-    $query = "INSERT INTO excercise_log (user_id, excercise_name, excercise_explain, record_date) VALUES (1, :name, :description, $date)";
+    $query = "INSERT INTO excercise_log (user_id, excercise_name, excercise_explain, record_date) VALUES (1, :name, :description, SYSDATE)";
     $insertEntry = $db->prepare($query);
 
     $insertEntry->bindValue(':name', $name);
