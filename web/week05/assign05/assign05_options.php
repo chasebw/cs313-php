@@ -242,16 +242,16 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a href="#!">Find friends</a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a href="#!">Motivation</a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
+            <a href="#!">Contact</a>
           </li>
           <li>
-            <a href="#!">Link 4</a>
+            <a href="#!">Get Hired</a>
           </li>
         </ul>
 
@@ -266,16 +266,16 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a href="#!">Follow Us</a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a href="#!">Information</a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
+            <a href="#!">Schedule</a>
           </li>
           <li>
-            <a href="#!">Link 4</a>
+            <a href="#!">Compete</a>
           </li>
         </ul>
 
@@ -290,7 +290,7 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    <a href=""> My Workout</a>
   </div>
   <!-- Copyright -->
 
