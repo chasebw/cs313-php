@@ -119,7 +119,7 @@ $statement->execute();
 
         <p class="w3-container w3-teal confirming">All done</p>
         <form action="assign03_d.php" method="post">
-            <button><a href="assign05_log.php">Return to Logging</a></button>
+            <button type="button" class="btn btn-primary"><a href="assign05_log.php">Return to Logging</a></button>
             <button type="button" class="btn btn-primary"><a href="assign05_options.php">Back to Menu</a></button>
     </div>
 
