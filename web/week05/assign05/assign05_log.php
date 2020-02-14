@@ -63,8 +63,8 @@ $db = get_db();
       
     </select>
 
-    <label for="description">Description</label>
-    <textarea name="description" id="" cols="30" rows="10" required></textarea>
+    <label for="description">Description</label> <p>4 sets of 15 repetitions...</p>
+    <textarea name="description" id="" cols="30" rows="10" required placeholder="3 sets of 15...."></textarea>
 
     
    <!-- <input type="text" id="workout" name="workout" placeholder="Workout type"> --->
