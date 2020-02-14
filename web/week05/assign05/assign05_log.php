@@ -27,9 +27,37 @@
 
 
     <p><strong> now put 'pushups' or 'pullups' * this will affect database querry</strong></p>
-    <label for="workout_type">Workout Type</label>
+    <label for="workout">Workout Type</label>
     <p>Pushups<input type="radio" name="workout_type" value="pushups"  id="workout_type"></p>
     <p>Pullups<input type="radio" name="workout_type" value="pullups"  id="workout_type"></p>
+
+    
+    <label for="workout_type">Workout Type</label>
+    <select name="workout_type" id="workout_type">
+      <?php
+      
+      try{
+        $statement = $db -> prepare('Select excercise_name from excercise_log');
+        $statement -> execute();
+        
+        while($row = $statement->fetch(PDO::FETCH_ASSOC))
+        {
+
+          $excercise_name = $row['excercise_name'];
+          echo "<option value=$excercise_name>$excercise_name</option>";
+
+        }
+      }
+      catch(Exception $ex){
+
+        echo "$ex";
+      }
+
+
+
+      ?>
+      
+    </select>
 
     
    <!-- <input type="text" id="workout" name="workout" placeholder="Workout type"> --->
