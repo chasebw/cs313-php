@@ -6,7 +6,7 @@
     //We are going to want to sanitize this... ew
     $name = $_POST['name'];
     $description = $_POST['description'];
-    $date = '2020-02-13';
+    $date = date('Y-m-d');
 
 
     try{
