@@ -6,10 +6,12 @@
     //We are going to want to sanitize this... ew
     $name = $_POST['name'];
     $description = $_POST['description'];
+    $date = '2020-02-13';
 
 
-    try {
-    $query = 'INSERT INTO excercise_log (user_id, excercise_name, excercise_explain, record_date) VALUES (1, :name, :description, SYSDATE)';
+    try{
+
+    $query = "INSERT INTO excercise_log (user_id, excercise_name, excercise_explain, record_date) VALUES (1, :name, :description, $date)";
     $insertEntry = $db->prepare($query);
 
     $insertEntry->bindValue(':name', $name);
@@ -17,7 +19,8 @@
 
     $insertEntry->execute();
 
-    } catch (Exception $ex) {
+    }
+     catch (Exception $ex) {
         echo "ERROR: $ex";
         die();
     }
