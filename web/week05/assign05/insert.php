@@ -13,7 +13,8 @@
 
     try{
 
-    $insertEntry = $db->prepare("INSERT INTO excercise_log (user_id, excercise_name, excercise_explain, record_date) VALUES (1, :name, :description, $date)");
+    $insertEntry = $db->prepare("INSERT INTO public.excercise_log (excercise_name,excercise_explain,record_date,user_id)
+    VALUES(':name',':description','$date', (SELECT user_id FROM public.user WHERE username = 'username47'))");
 
     $insertEntry->bindValue(':name', $name);
     $insertEntry->bindValue(':description', $description);
