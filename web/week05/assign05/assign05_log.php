@@ -28,6 +28,21 @@ $db = get_db();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="assign05_log.css">
+
+    <style>
+
+      .navbar{
+
+        margin-bottom: 0;
+      }
+
+      .mar{
+
+        margin-bottom: 5px;
+      }
+
+
+    </style>
     
     <title>Excercise Log</title>
 </head>
@@ -63,7 +78,7 @@ $db = get_db();
   </div>
 </nav>
 
-<header class="w3-container w3-teal">
+<header class="w3-container w3-teal mar">
 <h3>Excercise Log</h3>
 </header>
 
