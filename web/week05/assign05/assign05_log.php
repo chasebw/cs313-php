@@ -1,3 +1,21 @@
+
+
+<?php
+
+/**********************************************************
+ * File: results.php
+ * Author: Chase Wilcox
+ * 
+ * Description: This file shows an example of how to query a
+ *   PostgreSQL database from PHP.
+ ***********************************************************/
+
+require "../../db/dbConnect.php";
+
+$db = get_db();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
