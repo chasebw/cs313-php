@@ -36,10 +36,10 @@ $db = get_db();
 <h3>Excercise Log</h3>
 
 <div class="container">
-  <form method='POST' action=results.php>
+  <form method='POST' action = insert.php>
     
     <label for="workout_type">Workout Type</label>
-    <select name="workout_type" id="workout_type">
+    <select name="name" id="workout_type">
       <?php
       
       try{
@@ -58,8 +58,6 @@ $db = get_db();
 
         echo "$ex";
       }
-
-
 
       ?>
       
