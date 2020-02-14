@@ -1,6 +1,6 @@
 
 <?php 
-    require "../dbconnect.php";
+    require "../../db/dbConnect.php";
     $db = get_db();
 
     //We are going to want to sanitize this... ew
