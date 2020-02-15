@@ -50,7 +50,7 @@ $db = get_db();
 
       body{
         background: 'back.jpg' no-repeat;
-    
+        background-size: cover;
       }
 
 
