@@ -65,6 +65,8 @@ $db = get_db();
   .label{
 
     color: aliceblue;
+    font-weight: 500;
+    
   }
   
 
@@ -108,7 +110,7 @@ $db = get_db();
 
 
     <div class="container">
-    <header class="label w3-container w3-teal mar">
+    <header class="label w3-container mar">
       <h1>Excercise Log</h1>
     </header>
       <form method='POST' action=insert.php>
