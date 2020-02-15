@@ -58,8 +58,8 @@ $db = get_db();
   }
 
   .container {
-    background-color: black;
-    opacity: 0.1;
+    background-color: none;
+
   }
 
 
