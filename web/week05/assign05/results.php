@@ -47,7 +47,7 @@ $last_name = $row1['last_name'];
 
 #Note this statement didn't work with only a single string being input but yo uhave to put the string in quotes
 
-$statement = $db->prepare("SELECT excercise_name,excercise_explain,record_date FROM excercise_log WHERE user_id = 1 AND excercise_explain IS NOT NULL");
+$statement = $db->prepare("SELECT excercise_id,excercise_name,excercise_explain,record_date FROM excercise_log WHERE user_id = 1 AND excercise_explain IS NOT NULL");
 $statement->execute();
 
 
@@ -139,12 +139,19 @@ $statement->execute();
                     // The variable "row" now holds the complete record for that
                     // row, and we can access the different values based on their
                     // name
+                    $excercise_id = $row['row'];
                     $excercise_name = $row['excercise_name'];
                     $excercise_explain = $row['excercise_explain'];
                     $record_date = $row['record_date'];
                     echo "<tr>" . "<td>" . $excercise_name    . "</td>" .
                         "<td>" . $excercise_explain . "</td>" .
-                        "<td>" . $record_date       . "</td>" .  "</tr>";
+                        "<td>" . $record_date       . 
+
+                        "<form action='remove.php' method='POST'>" . "<button type='submit' name='remove'" ."value='$excercise_id'>Remove Entry</button></form>";
+                        
+                        
+                        "</td>" .
+                        "</tr>";
                 }
                 ?>
             </tbody>
