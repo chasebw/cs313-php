@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/d608f5aa42.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
@@ -226,7 +227,9 @@
 
         <!-- Content -->
         <h5 class="text-uppercase">About us</h5>
-        <p>We are a small startup comapany working out of Rexburg</p>
+        <p>We are a small startup comapany working out of Rexburg
+        <i class="fab fa-twitter"></i>
+        </p>
 
       </div>
       <!-- Grid column -->
@@ -241,7 +244,7 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Find friends</a>
+            <a href="#!">Find Friends</a>
           </li>
           <li>
             <a href="#!">Motivation</a>
