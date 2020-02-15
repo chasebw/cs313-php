@@ -139,7 +139,7 @@ $statement->execute();
                     // The variable "row" now holds the complete record for that
                     // row, and we can access the different values based on their
                     // name
-                    $excercise_id = $row['row'];
+                    $excercise_id = $row['excercise_id'];
                     $excercise_name = $row['excercise_name'];
                     $excercise_explain = $row['excercise_explain'];
                     $record_date = $row['record_date'];
