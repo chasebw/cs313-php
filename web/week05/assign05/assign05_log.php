@@ -57,6 +57,8 @@ $db = get_db();
 
   }
 
+  
+
    
   </style>
 
@@ -93,13 +95,13 @@ $db = get_db();
       </div>
     </nav>
 
-    <header class="w3-container w3-teal mar">
-      <h1>Excercise Log</h1>
-    </header>
 
 
 
     <div class="container">
+    <header class="w3-container w3-teal mar">
+      <h1>Excercise Log</h1>
+    </header>
       <form method='POST' action=insert.php>
 
         <label for="workout_type">Workout Type</label>
