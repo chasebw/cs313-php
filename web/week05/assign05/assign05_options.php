@@ -14,6 +14,11 @@
       margin-bottom: 0;
       border-radius: 0;
     }
+
+    i:hover{
+
+      background-color: cyan;
+    }
     
     /* Add a gray background color and some padding to the footer */
     footer {
@@ -23,7 +28,7 @@
     
   .carousel-inner img {
       
-      max-height: 600px; /* Set width to 100% was max-height 300px */
+      max-height: 650px; /* Set width to 100% was max-height 300px */
       width: 100%; /*was max width 179 */
       margin: auto;
       min-height:200px;
@@ -227,9 +232,17 @@
 
         <!-- Content -->
         <h5 class="text-uppercase">About us</h5>
-        <p>We are a small startup comapany working out of Rexburg
-        <i class="fab fa-twitter"></i>
-        </p>
+        <p>We are a small startup comapany working out of Rexburg </p>
+        <p> 
+          <a href="#"><i class="fab fa-twitter" style="font-size: 3em; color: blue;"></i></a>
+          <a href="#"><i style="font-size: 3em; color: blue;" class="fab fa-facebook-square" ></i></a> 
+          <a href="#"><i style="font-size: 3em; color: red;" class="fab fa-instagram-square"></i></a>
+          <a href="#"><i style="font-size: 3em; color: red;" class="fab fa-pinterest"></i></a>
+          <a href="#"><i style="font-size: 3em; color: #34526f;" class="fab fa-tumblr"></i></a>
+
+
+
+      </p>
 
       </div>
       <!-- Grid column -->
@@ -297,7 +310,6 @@
   <!-- Copyright -->
 
 </footer>
-<!-- Footer -->
 
 </body>
 </html>
