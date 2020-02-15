@@ -22,8 +22,8 @@
     
   .carousel-inner img {
       
-      max-height: 500px; /* Set width to 100% was max-height 300px */
-      width: 90%; /*was max width 179 */
+      max-height: 600px; /* Set width to 100% was max-height 300px */
+      width: 100%; /*was max width 179 */
       margin: auto;
       min-height:200px;
   }
