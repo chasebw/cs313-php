@@ -63,7 +63,6 @@ $db = get_db();
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -110,7 +109,7 @@ $db = get_db();
       
     </select>
 
-    <label for="description">Description <p>4 sets of 15 repetitions...</p></label> 
+    <label for="description">Description</label> 
     <textarea name="description" id="" cols="30" rows="10" required placeholder="3 sets of 15...."></textarea>
 
     

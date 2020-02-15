@@ -24,7 +24,7 @@
       
       height:auto;
       height: auto; /* Set width to 100% was max-height 300px */
-      width: 100%; /*was max width 179 */
+      max-width: 552px; /*was max width 179 */
       margin: auto;
       min-height:200px;
   }
