@@ -52,8 +52,7 @@ $db = get_db();
     
   body{
 
-    background-image: url('back.jpg');
-    background: no-repeat;
+    background: url('back.jpg') no-repeat;
     background-size: cover;
 
   }
