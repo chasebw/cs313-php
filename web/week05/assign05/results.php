@@ -147,7 +147,9 @@ $statement->execute();
                         "<td>" . $excercise_explain . "</td>" .
                         "<td>" . $record_date       . 
 
-                        "<form action='remove.php' method='POST'>" . "<button type='submit' name='remove'" ."value='$excercise_id'>Remove Entry</button></form>";
+                        "<form action='remove.php' method='POST'>" . 
+                        "<button type='submit' class='btn btn-outline-primary' name='remove'" .
+                        "value='$excercise_id'>Remove Entry</button></form>";
                         
                         
                         "</td>" .
