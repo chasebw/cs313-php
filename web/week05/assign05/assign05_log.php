@@ -99,7 +99,7 @@ $db = get_db();
 
 
     <div class="container">
-    <header class="w3-container mar">
+    <header class="w3-container w3-teal mar">
       <h1>Excercise Log</h1>
     </header>
       <form method='POST' action=insert.php>
