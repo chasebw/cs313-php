@@ -59,6 +59,11 @@ $db = get_db();
 
   .container {
     background-color: none;
+  }
+
+
+  .label{
+
     color: aliceblue;
   }
   
@@ -103,12 +108,12 @@ $db = get_db();
 
 
     <div class="container">
-    <header class="w3-container w3-teal mar">
+    <header class="label w3-container w3-teal mar">
       <h1>Excercise Log</h1>
     </header>
       <form method='POST' action=insert.php>
 
-        <label for="workout_type">Workout Type</label>
+        <label class="label" for="workout_type">Workout Type</label>
         <select name="name" id="workout_type">
           <?php
 
@@ -130,7 +135,7 @@ $db = get_db();
 
         </select>
 
-        <label for="description">Description</label>
+        <label  class="label" for="description">Description</label>
         <textarea name="description" id="" cols="30" rows="10" required placeholder="3 sets of 15...."></textarea>
 
 
