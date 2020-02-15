@@ -62,6 +62,13 @@ $db = get_db();
 
   }
 
+  h1 {
+    background: black;
+    padding: 6px 8px;
+    opacity: 0.83;
+    box-shadow: 2px 3px grey;
+    text-shadow: 3px 4px black;
+
 
   .label{
 
