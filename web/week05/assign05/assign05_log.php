@@ -62,11 +62,6 @@ $db = get_db();
 
   }
 
-  label.label {
-    background-blend-mode: color-burn;
-    background-color: black;
-    opacity: 0.78;
-}
 
   h1 {
     background: black;
