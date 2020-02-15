@@ -59,6 +59,7 @@ $db = get_db();
 
   .container {
     background-color: none;
+    color: aliceblue;
   }
   
 
