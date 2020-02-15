@@ -32,6 +32,8 @@ $db = get_db();
   <style>
 
 
+
+
     .navbar {
 
       margin-bottom: 0;
@@ -47,6 +49,14 @@ $db = get_db();
 
       margin-bottom: 5px;
     }
+    
+  body{
+
+    background-image: url('back.jpg');
+    background: no-repeat;
+    background-size: cover;
+
+  }
 
    
   </style>
@@ -59,7 +69,7 @@ $db = get_db();
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body style="background-image: url('back.jpg');">
+  <body>
 
 
     <nav class="navbar navbar-inverse">
