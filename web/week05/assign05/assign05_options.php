@@ -121,7 +121,7 @@
       </div>
 
       <div class="item">
-        <img src="test_1.jpg" alt="Image">
+        <img src="test_2.jpg" alt="Image">
         <div class="carousel-caption">
           <h3>Heart</h3>
           <p>Soul</p>
@@ -150,8 +150,8 @@
       <div class="item">
         <img src="pic5.jpg" alt="Image">
         <div class="carousel-caption">
-          <h3>Heart</h3>
-          <p>Soul</p>
+          <h3>Show Your Colors</h3>
+          <p>Extend Yourself</p>
         </div>      
       </div>
     </div>
