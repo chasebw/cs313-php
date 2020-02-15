@@ -23,7 +23,7 @@
   .carousel-inner img {
       
       height:auto;
-      height: auto; /* Set width to 100% was max-height 300px */
+      height: 300px; /* Set width to 100% was max-height 300px */
       max-width: 552px; /*was max width 179 */
       margin: auto;
       min-height:200px;
