@@ -161,7 +161,7 @@ $statement->execute();
     </div>
 
 
-    <p class="w3-container w3-teal confirming">All done</p>
+    <p class="w3-container w3-teal confirming" style="font-size: 20px">Summary</p>
     <form action="assign03_d.php" method="post">
         <button type="button" class="btn btn-primary"><a href="assign05_log.php">Return to Logging</a></button>
         <button type="button" class="btn btn-primary"><a href="assign05_options.php">Back to Menu</a></button>
