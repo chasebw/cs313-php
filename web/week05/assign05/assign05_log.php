@@ -53,9 +53,6 @@ $db = get_db();
 
   <title>Excercise Log</title>
 </head>
-
-<body style="background-image: url('img_girl.jpg');">>
-
   <!DOCTYPE html>
   <html>
 
@@ -90,6 +87,10 @@ $db = get_db();
     <header class="w3-container w3-teal mar">
       <h1>Excercise Log</h1>
     </header>
+
+    <!-- This is where make the background image start? -->
+    <div style="background-image: url('back.jpg');">
+
 
     <div class="container">
       <form method='POST' action=insert.php>
@@ -127,6 +128,8 @@ $db = get_db();
         <input type="submit" value="Submit">
         <!-- Add link back to stuff here-->
       </form>
+    </div>
+
     </div>
 
 
