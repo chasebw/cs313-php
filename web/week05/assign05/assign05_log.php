@@ -58,7 +58,8 @@ $db = get_db();
   }
 
   .container {
-    background-color: none;
+    background-color: black;
+    opacity: 0.1;
   }
 
 
@@ -66,7 +67,7 @@ $db = get_db();
 
     color: aliceblue;
     font-weight: 500;
-    font-size: calc(9px + 2vw);
+    font-size: calc(12px + 1vw);
 
   }
 
