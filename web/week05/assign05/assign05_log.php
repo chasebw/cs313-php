@@ -59,7 +59,7 @@ $db = get_db();
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body>
+  <body style="background-image: url('back.jpg');">
 
 
     <nav class="navbar navbar-inverse">
@@ -88,8 +88,6 @@ $db = get_db();
       <h1>Excercise Log</h1>
     </header>
 
-    <!-- This is where make the background image start? -->
-    <div style="background-image: url('back.jpg');">
 
 
     <div class="container">
@@ -130,7 +128,6 @@ $db = get_db();
       </form>
     </div>
 
-    </div>
 
 
 
