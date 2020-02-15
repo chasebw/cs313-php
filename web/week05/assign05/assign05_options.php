@@ -22,8 +22,8 @@
     
   .carousel-inner img {
       
-      max-height: 300px; /* Set width to 100% was max-height 300px */
-      max-width: 552px; /*was max width 179 */
+      max-height: 453px; /* Set width to 100% was max-height 300px */
+      width: auto; /*was max width 179 */
       margin: auto;
       min-height:200px;
   }
@@ -121,7 +121,7 @@
       </div>
 
       <div class="item">
-        <img src="pic2.jpg" alt="Image">
+        <img src="test_1.jpg" alt="Image">
         <div class="carousel-caption">
           <h3>Heart</h3>
           <p>Soul</p>
