@@ -66,6 +66,7 @@ $db = get_db();
 
     color: aliceblue;
     font-weight: 500;
+    font-size: calc(12px + 2vw);
 
   }
 
