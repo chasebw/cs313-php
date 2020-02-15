@@ -30,6 +30,12 @@ $db = get_db();
   <link rel="stylesheet" type="text/css" href="assign05_log.css">
 
   <style>
+
+body {
+      background: 'back.jpg'no-repeat;
+      background-size: cover;
+    }
+    
     .navbar {
 
       margin-bottom: 0;
@@ -46,10 +52,7 @@ $db = get_db();
       margin-bottom: 5px;
     }
 
-    body {
-      background: 'back.jpg'no-repeat;
-      background-size: cover;
-    }
+   
   </style>
 
   <title>Excercise Log</title>
