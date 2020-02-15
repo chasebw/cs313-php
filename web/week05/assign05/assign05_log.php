@@ -31,11 +31,7 @@ $db = get_db();
 
   <style>
 
-body {
-      background: 'back.jpg'no-repeat;
-      background-size: cover;
-    }
-    
+
     .navbar {
 
       margin-bottom: 0;
@@ -58,7 +54,7 @@ body {
   <title>Excercise Log</title>
 </head>
 
-<body>
+<body style="background-image: url('img_girl.jpg');">>
 
   <!DOCTYPE html>
   <html>
