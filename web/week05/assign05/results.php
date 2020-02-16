@@ -91,6 +91,30 @@ $statement->execute();
             padding: 25px;
         }
 
+
+        body {
+
+            background: url('back.jpg') no-repeat;
+            background-size: cover;
+            color: whitesmoke;
+            font-size: 14px;
+
+
+        }
+
+        .table-hover>tbody>tr:hover {
+            background-color: #0b1816;
+        }
+
+        table {
+            background-color: RGB(100, 100, 100, 0.7);
+        }
+
+        h2 {
+            font-size: 30px;
+            background-color: RGB(0, 0, 0, 0.5);
+            padding: 12px 16px;
+        }
     </style>
     <title>Excercise Journal</title>
 </head>
