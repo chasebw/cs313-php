@@ -17,7 +17,7 @@
     $insertEntry = $db->prepare("INSERT INTO public.personal_record(user_id,contact_id,record_name,record_amount,record_date)
     VALUES ((SELECT user_id FROM public.user WHERE username ='username47'),
         (SELECT contact_id FROM public.contact WHERE user_id= (SELECT user_id FROM public.user WHERE username = 'username47')),
-            ':record_name', ':record_amount', '$date');");
+            ':record_name', ':record_amount', '$date')");
 
     $insertEntry->bindValue(':record_name', $record_name);
     $insertEntry->bindValue(':record_amount', $record_amount);
