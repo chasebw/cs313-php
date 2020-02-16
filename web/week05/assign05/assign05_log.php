@@ -78,7 +78,6 @@ $db = get_db();
     .con {
 
       padding: 0.01em 16px;
-      border-radius: 4px;
 
     }
 
@@ -101,6 +100,11 @@ $db = get_db();
     .mys:hover{
 
       background-color: #0A2751;
+    }
+
+    .radius{
+      border-radius: 4px;
+
     }
   </style>
 
@@ -142,7 +146,7 @@ $db = get_db();
 
   <div class="container">
     <header class="label con mar">
-      <h1>Excercise Log</h1>
+      <h1 class="radius">Excercise Log</h1>
     </header>
     <form method='POST' action=insert.php>
 
