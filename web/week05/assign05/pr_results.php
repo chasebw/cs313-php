@@ -103,7 +103,11 @@ $statement->execute();
         }
 
         .table-hover>tbody>tr:hover {
-    background-color: #0b1816;
+            background-color: #0b1816;
+        }
+
+        table {
+            background-color: RGB(100, 100, 100, 0.7);
         }
     </style>
     <title>Personal Records</title>
