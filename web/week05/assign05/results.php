@@ -108,7 +108,7 @@ $statement->execute();
 
         table {
             background-color: RGB(100, 100, 100, 0.7);
-            font-size: calc(8px + 1vw);
+            font-size: calc(6px + 1vw);
             font-weight: 400;
         }
 
