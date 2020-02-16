@@ -15,8 +15,8 @@
     $insertEntry = $db->prepare("INSERT INTO public.excercise_log (excercise_name,excercise_explain,record_date,user_id)
     VALUES(:excer_name,:excer_description,'$date', (SELECT user_id FROM public.user WHERE username = 'username47'))");
 
-    $insertEntry->bindValue(':excer_name', $excer_name);
-    $insertEntry->bindValue(':excer_description', $excer_description);
+    $insertEntry->bindValue(':excer_name', "$excer_name");
+    $insertEntry->bindValue(':excer_description', "$excer_description");
 
     $insertEntry->execute();
 

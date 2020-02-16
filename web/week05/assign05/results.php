@@ -111,6 +111,8 @@ $statement->execute();
                     <li><a href="assign05_options.php">Home</a></li>
                     <li class="active"><a href="results.php">View Workouts</a></li>
                     <li><a href="assign05_log.php">Log Workouts</a></li>
+                    <li><a href="pr_record.php">Record Personal Record</a></li>
+                    <li><a href="pr_results.php">View Personal Records</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="assign05_login.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
