@@ -29,7 +29,7 @@
      ':rec_amount', 
      '$date')");
 
-    $insertEntry->bindValue(':rec_name', $record_name);
+    $insertEntry->bindValue(':rec_name', "$record_name");
     $insertEntry->bindValue(':rec_amount', $record_amount);
 
     $insertEntry->execute();
