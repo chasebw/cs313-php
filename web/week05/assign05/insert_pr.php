@@ -7,8 +7,8 @@
     $record_name = $_POST['record_name'];
     $record_amount = $_POST['record_amount'];
 
-    echo "record name is $record_name";
-    echo "record amount is $record_amount";
+    //echo "record name is $record_name";
+    //echo "record amount is $record_amount";
 
 
 
