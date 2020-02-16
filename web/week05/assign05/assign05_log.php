@@ -92,9 +92,14 @@ $db = get_db();
       background-color: #bbdefb;
     }
 
-    .mys{
+    .mys {
 
-    background-color: #0D47A1;
+      background-color: #0D47A1;
+    }
+
+    .mys:hover{
+
+      background-color: #0A2751;
     }
   </style>
 
