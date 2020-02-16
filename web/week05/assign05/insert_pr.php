@@ -25,12 +25,12 @@
     VALUES 
     ((SELECT user_id FROM public.user WHERE username ='username47'),
     (SELECT contact_id FROM public.contact WHERE user_id= (SELECT user_id FROM public.user WHERE username = 'username47')),
-    ':rec_name',
-     ':rec_amount', 
+    '$record_name',
+     '$record_amount', 
      '$date')");
 
-    $insertEntry->bindValue(':rec_name', "$record_name");
-    $insertEntry->bindValue(':rec_amount', $record_amount);
+    //$insertEntry->bindValue(':rec_name', "$record_name");
+    //$insertEntry->bindValue(':rec_amount', $record_amount);
 
     $insertEntry->execute();
 
