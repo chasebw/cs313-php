@@ -23,7 +23,7 @@
     $insert = $db->prepare("INSERT INTO public.personal_record 
     (record_name,record_amount,user_id,contact_id,record_name,record_date)
     VALUES 
-    (':rec_name', ':rec_amount',(SELECT user_id FROM public.user WHERE username ='username47'),
+    (:rec_name, :rec_amount,(SELECT user_id FROM public.user WHERE username ='username47'),
     (SELECT contact_id FROM public.contact WHERE user_id= (SELECT user_id FROM public.user WHERE username = 'username47')), '$date')");
 
     
