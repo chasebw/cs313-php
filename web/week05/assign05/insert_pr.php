@@ -21,18 +21,15 @@
 
     try{
     $insertEntry = $db->prepare("INSERT INTO public.personal_record 
-    (user_id,contact_id,record_name,record_amount,record_date)
+    (record_name,record_amount,user_id,contact_id,record_name,record_date)
     VALUES 
-    ((SELECT user_id FROM public.user WHERE username ='username47'),
-    (SELECT contact_id FROM public.contact WHERE user_id= (SELECT user_id FROM public.user WHERE username = 'username47')),
-    'rec_name',
-     'rec_amount', 
-     '$date')");
+    (':rec_name', ':rec_amount',(SELECT user_id FROM public.user WHERE username ='username47'),
+    (SELECT contact_id FROM public.contact WHERE user_id= (SELECT user_id FROM public.user WHERE username = 'username47')), '$date')");
 
     
 
-    $insertEntry->bindValue(':rec_name', "$record_name",PDO::PARAM_STR);
-    $insertEntry->bindValue(':rec_amount', "$record_amount", PDO::PARAM_STR);
+    $insertEntry->bindValue(':rec_name', "$record_name");
+    $insertEntry->bindValue(':rec_amount', "$record_amount");
 
     $insertEntry->execute();
 
