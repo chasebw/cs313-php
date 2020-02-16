@@ -184,7 +184,7 @@ $statement->execute();
         </table>
     </div>
 
-
+<p class="w3-container w3-teal confirming" style="font-size: 20px"> Personal Record Summary</p>
     <form action="assign03_d.php" method="post">
         <button type="button" class="btn btn-primary"><a href="assign05_log.php">Return to Logging</a></button>
         <button type="button" class="btn btn-primary"><a href="assign05_options.php">Back to Menu</a></button>
