@@ -161,7 +161,7 @@ $db = get_db();
           while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 
             $record_name = $row['record_name'];
-            echo "<option value='$record_name'>$record_name</option>";
+            echo "<option value='$record_name'> $record_name </option>";
           }
         } catch (Exception $ex) {
 
