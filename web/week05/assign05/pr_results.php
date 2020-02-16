@@ -139,9 +139,6 @@ $statement->execute();
         </div>
     </nav>
 
-    <header class="w3-container w3-teal mar">
-        <h1>Excercise Journal</h1>
-    </header>
 
 
     <div class="container">
