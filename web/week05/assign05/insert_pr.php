@@ -20,7 +20,7 @@
     // will need to store the username and password for this stuff in a session I think eventually
 
     try{
-    $insertEntry = $db->prepare("INSERT INTO public.personal_record 
+    $insert = $db->prepare("INSERT INTO public.personal_record 
     (record_name,record_amount,user_id,contact_id,record_name,record_date)
     VALUES 
     (':rec_name', ':rec_amount',(SELECT user_id FROM public.user WHERE username ='username47'),
@@ -28,10 +28,10 @@
 
     
 
-    $insertEntry->bindValue(':rec_name', "$record_name");
-    $insertEntry->bindValue(':rec_amount', "$record_amount");
+    $insert->bindValue(':rec_name', "$record_name");
+    $insert->bindValue(':rec_amount', "$record_amount");
 
-    $insertEntry->execute();
+    $insert->execute();
 
     }
      catch (Exception $ex) {
