@@ -91,6 +91,13 @@ $statement->execute();
             background-color: #f2f2f2;
             padding: 25px;
         }
+
+        body {
+
+            background: url('back.jpg') no-repeat;
+            background-size: cover;
+
+        }
     </style>
     <title>Personal Records</title>
 </head>
