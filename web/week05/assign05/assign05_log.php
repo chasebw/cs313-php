@@ -78,6 +78,7 @@ $db = get_db();
     .con {
 
       padding: 0.01em 16px;
+      border-radius: 4px;
 
     }
 
