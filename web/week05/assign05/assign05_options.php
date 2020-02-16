@@ -200,6 +200,11 @@
       <p>View Workouts</p>    
     </div>
     </a>
+    </a>
+    
+    
+
+
     <div class="col-sm-4">
       <div class="well">
        <p>Achieve your Goals!</p>
