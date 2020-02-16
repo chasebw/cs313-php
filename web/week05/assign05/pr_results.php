@@ -92,7 +92,7 @@ $statement->execute();
             padding: 25px;
         }
     </style>
-    <title>Excercise Journal</title>
+    <title>Personal Records</title>
 </head>
 
 <body>
@@ -127,13 +127,13 @@ $statement->execute();
 
 
     <div class="container">
-        <h2>Your Workouts</h2>
-        <p>This table displays your workouts:</p>
+        <h2>Your Personal Records:</h2>
+        <p>See how far you have come:</p>
         <table class="table table-hover">
             <thead>
                 <tr>
-                    <th>Excercise Name:</th>
-                    <th>Excercise Description:</th>
+                    <th>Personal Record Name:</th>
+                    <th>Personal Record Amount:</th>
                     <th>Recorded Date:</th>
                 </tr>
             </thead>
