@@ -85,11 +85,22 @@ $statement->execute();
 
             margin-bottom: 0;
         }
-        
+
         footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        select {
+            box-shadow: 3px 4px grey;
+            background-color: #64b5f6;
+
+        }
+
+        textarea {
+            box-shadow: 3px 4px grey;
+            background-color: #64b5f6;
+        }
     </style>
     <title>Excercise Journal</title>
 </head>
@@ -145,14 +156,14 @@ $statement->execute();
                     $record_date = $row['record_date'];
                     echo "<tr>" . "<td>" . $excercise_name    . "</td>" .
                         "<td>" . $excercise_explain . "</td>" .
-                        "<td>" . $record_date       . 
+                        "<td>" . $record_date       .
 
-                        "<form action='remove.php' method='POST'>" . 
+                        "<form action='remove.php' method='POST'>" .
                         "<button type='submit' class='btn btn-danger' name='remove'" .
                         "value='$excercise_id'>Remove Entry</button></form>";
-                        
-                        
-                        "</td>" .
+
+
+                    "</td>" .
                         "</tr>";
                 }
                 ?>
@@ -165,15 +176,15 @@ $statement->execute();
     <form action="assign03_d.php" method="post">
         <button type="button" class="btn btn-primary"><a href="assign05_log.php">Return to Logging</a></button>
         <button type="button" class="btn btn-primary"><a href="assign05_options.php">Back to Menu</a></button>
-    
+
 
 
         <div>
-    <br>
-    <br>
-    <br>
-    
-    </div>
+            <br>
+            <br>
+            <br>
+
+        </div>
 
 
 
