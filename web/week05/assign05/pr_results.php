@@ -98,8 +98,12 @@ $statement->execute();
             background-size: cover;
             color: whitesmoke;
             font-size: 14px;
-            
 
+
+        }
+
+        .table-hover>tbody>tr:hover {
+    background-color: #0b1816;
         }
     </style>
     <title>Personal Records</title>
