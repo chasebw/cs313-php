@@ -109,6 +109,12 @@ $statement->execute();
         table {
             background-color: RGB(100, 100, 100, 0.7);
         }
+
+        h2 {
+            font-size: 30px;
+            background-color: RGB(0, 0, 0, 0.5);
+            padding: 12px 16px;
+        }
     </style>
     <title>Personal Records</title>
 </head>
