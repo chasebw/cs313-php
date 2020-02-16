@@ -91,6 +91,11 @@ $db = get_db();
       box-shadow: 3px 4px grey;
       background-color: #bbdefb;
     }
+
+    .mys{
+
+    background-color: #0D47A1;
+    }
   </style>
 
   <title>Excercise Log</title>
