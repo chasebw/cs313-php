@@ -30,10 +30,6 @@ $db = get_db();
   <link rel="stylesheet" type="text/css" href="assign05_log.css">
 
   <style>
-
-
-
-
     .navbar {
 
       margin-bottom: 0;
@@ -49,128 +45,136 @@ $db = get_db();
 
       margin-bottom: 5px;
     }
-    
-  body{
 
-    background: url('back.jpg') no-repeat;
-    background-size: cover;
+    body {
 
-  }
+      background: url('back.jpg') no-repeat;
+      background-size: cover;
 
-  .container {
-    background-color: none;
+    }
 
-  }
+    .container {
+      background-color: none;
+
+    }
 
 
-  h1 {
-    background: black;
-    padding: 6px 8px;
-    opacity: 0.83;
-    box-shadow: 2px 3px grey;
-    text-shadow: 3px 4px black;
-  }
+    h1 {
+      background: black;
+      padding: 6px 8px;
+      opacity: 0.83;
+      box-shadow: 2px 3px grey;
+      text-shadow: 3px 4px black;
+    }
 
-  .label{
+    .label {
 
-    color: aliceblue;
-    font-weight: 500;
-    font-size: calc(12px + 1vw);
+      color: aliceblue;
+      font-weight: 500;
+      font-size: calc(12px + 1vw);
 
-  }
+    }
 
-  .con{
+    .con {
 
-    padding: 0.01em 16px;
+      padding: 0.01em 16px;
 
-  }
-  
+    }
 
-   
+    select {
+      box-shadow: 3px 4px grey;
+      background-color: #64b5f6;
+
+    }
+
+    textarea {
+      box-shadow: 3px 4px grey;
+      background-color: #bbdefb;
+    }
   </style>
 
   <title>Excercise Log</title>
 </head>
-  <!DOCTYPE html>
-  <html>
+<!DOCTYPE html>
+<html>
 
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body>
+<body>
 
 
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="assign05_options.php">Home</a></li>
-            <li><a href="results.php">View Workouts</a></li>
-            <li class="active"><a href="assign05_log.php">Log Workouts</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="assign05_login.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-    </nav>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="assign05_options.php">Home</a></li>
+          <li><a href="results.php">View Workouts</a></li>
+          <li class="active"><a href="assign05_log.php">Log Workouts</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="assign05_login.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
 
 
-    <div class="container">
+  <div class="container">
     <header class="label con mar">
       <h1>Excercise Log</h1>
     </header>
-      <form method='POST' action=insert.php>
+    <form method='POST' action=insert.php>
 
-        <label class="label" for="workout_type">Workout Type</label>
-        <select name="name" id="workout_type">
-          <?php
+      <label class="label" for="workout_type">Workout Type</label>
+      <select name="name" id="workout_type">
+        <?php
 
-          try {
-            $statement = $db->prepare('Select DISTINCT excercise_name from excercise_log ORDER BY excercise_name');
-            $statement->execute();
+        try {
+          $statement = $db->prepare('Select DISTINCT excercise_name from excercise_log ORDER BY excercise_name');
+          $statement->execute();
 
-            while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+          while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 
-              $excercise_name = $row['excercise_name'];
-              echo "<option value=$excercise_name>$excercise_name</option>";
-            }
-          } catch (Exception $ex) {
-
-            echo "$ex";
+            $excercise_name = $row['excercise_name'];
+            echo "<option value=$excercise_name>$excercise_name</option>";
           }
+        } catch (Exception $ex) {
 
-          ?>
+          echo "$ex";
+        }
 
-        </select>
+        ?>
 
-        <label  class="label" for="description">Description</label>
-        <textarea name="description" id="" cols="30" rows="10" required placeholder="3 sets of 15...."></textarea>
+      </select>
 
-
-        <!-- <input type="text" id="workout" name="workout" placeholder="Workout type"> --->
-        <button class="mys"><a style='color: white' style="text-decoration: none" href="assign05_options.php">Back to Menu</a></button>
-        <button class="mys"><a style='color: white' style="text-decoration: none" href="assign05_login.php">Back to Login</a></button>
-
-        <input type="submit" value="Submit">
-        <!-- Add link back to stuff here-->
-      </form>
-    </div>
-
-    
+      <label class="label" for="description">Description</label>
+      <textarea name="description" id="" cols="30" rows="10" required placeholder="3 sets of 15...."></textarea>
 
 
+      <!-- <input type="text" id="workout" name="workout" placeholder="Workout type"> --->
+      <button class="mys"><a style='color: white' style="text-decoration: none" href="assign05_options.php">Back to Menu</a></button>
+      <button class="mys"><a style='color: white' style="text-decoration: none" href="assign05_login.php">Back to Login</a></button>
+
+      <input type="submit" value="Submit">
+      <!-- Add link back to stuff here-->
+    </form>
+  </div>
 
 
-  </body>
 
-  </html>
+
+
+
+</body>
+
+</html>

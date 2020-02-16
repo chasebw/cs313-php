@@ -91,16 +91,6 @@ $statement->execute();
             padding: 25px;
         }
 
-        select {
-            box-shadow: 3px 4px grey;
-            background-color: #64b5f6;
-
-        }
-
-        textarea {
-            box-shadow: 3px 4px grey;
-            background-color: #64b5f6;
-        }
     </style>
     <title>Excercise Journal</title>
 </head>
