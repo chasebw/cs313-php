@@ -32,7 +32,7 @@ if (isset($_POST["submit"]))
     if(password_verify($pass,$hashpass))
     {
 
-        $query = ("SELECT user_id FROM ta_user WHERE username = $user");
+        $query = ("SELECT user_id FROM ta_user WHERE ta_user.username = $user");
         $statement= $db->prepare($query);
     
         $statement->execute();
