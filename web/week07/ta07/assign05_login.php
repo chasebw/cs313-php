@@ -16,7 +16,7 @@ if (isset($_POST["submit"]))
 
     //for pass
 
-    $query = ("SELECT user_pass FROM ta_user WHERE username = $user");
+    $query = ("SELECT user_pass FROM ta_user WHERE ta_user.username = $user");
     $statement= $db->prepare($query);
 
     $statement->execute();
