@@ -56,7 +56,6 @@ if (isset($_POST["submit"]))
 
 catch (Exception $ex) {
     echo "ERROR: $ex";
-    die();
 }
 
 
@@ -89,13 +88,13 @@ catch (Exception $ex) {
         <form action="" method="POST">
             <?php
 
-            if($incorrect_login == true)
-            {
+            // if($incorrect_login == true)
+            // {
 
-                echo "<p>Incorrect username or password</p>";
+            //     echo "<p>Incorrect username or password</p>";
 
 
-            }
+            // }
 
 
 
