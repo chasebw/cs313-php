@@ -5,6 +5,7 @@ session_start();
 
 $incorrect_login = false;
 
+try{
 if (isset($_POST["submit"]))
 {
     $user = $_POST["user"];
@@ -50,13 +51,15 @@ if (isset($_POST["submit"]))
 
 
     }
-
-
-    
-
-
-
 }
+}
+
+catch (Exception $ex) {
+    echo "ERROR: $ex";
+    die();
+}
+
+
 
 
 
