@@ -3,6 +3,9 @@
 
 session_start();
 
+require "../../db/dbConnect.php";
+$db = get_db();
+
 $incorrect_login = false;
 
 try{
