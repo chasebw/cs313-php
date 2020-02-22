@@ -104,7 +104,7 @@ catch(Exception $ex)
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assign05_login_style.css">
     <script src="https://kit.fontawesome.com/d608f5aa42.js" crossorigin="anonymous"></script>
-    <link type="script" href="assign05_login_style.css">
+    <link type="script" href="assign05_login.js">
     <title>Login Page</title>
 </head>
 
