@@ -22,7 +22,7 @@
     padding: 10px;
 }
 
-button#sub_button:hover{
+button#sub_button:hover, .login:hover{
   background: #43A047;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
@@ -34,7 +34,7 @@ button#sub_button:hover{
 }
 
 
-button#sub_button{
+button#sub_button, .login{
 
   cursor: pointer;
   width: 100%;
