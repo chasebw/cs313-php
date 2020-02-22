@@ -2,7 +2,7 @@
 
 <?php
 
-
+try{
 session_start();
 
 $badlogin = false;
@@ -73,6 +73,13 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
 
 
 
+}
+}
+catch(Exception $ex)
+{
+
+
+    echo "Error: $ex";
 }
 
 
