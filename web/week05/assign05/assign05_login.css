@@ -9,8 +9,7 @@ body{
 
 }
 
-.invalid{
-
+p.invalid {
     color: red;
 }
 
