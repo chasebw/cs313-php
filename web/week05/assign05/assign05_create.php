@@ -76,10 +76,7 @@ button#sub_button{
     <fieldset>
       <button type="button" name="submit_button" class="submit1" id="sub_button" value="submitform" onclick="check()">Submit</button>
     </fieldset>
-    </form>
-    <p class="button1">Designed by a Student</p>
-    <p class="button1"><a class="hoverclass" href="assign05_login.php">Login Page</a></p>
-  </form>
+    <button class="login"><a href="assign05_login.php">Login Page</a></button>
 </div>
 
 
