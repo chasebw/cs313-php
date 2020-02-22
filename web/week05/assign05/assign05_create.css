@@ -31,7 +31,7 @@ body {
   position: relative;
 }
 
-#contact input[type="password"]
+input[type="password"]
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
@@ -82,7 +82,7 @@ fieldset {
   width: 100%;
 }
 
-#contact input[type="password"],
+input[type="password"],
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
@@ -95,7 +95,7 @@ fieldset {
   padding: 10px;
 }
 
-#contact input[type="password"]:hover
+input[type="password"]:hover,
 #contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
@@ -138,6 +138,7 @@ fieldset {
 .copyright {
   text-align: center;
 }
+
 
 #contact input:focus,
 #contact textarea:focus {
