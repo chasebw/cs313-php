@@ -76,7 +76,7 @@ button#sub_button, .login{
     <fieldset>
       <button type="button" name="submit_button" class="submit1" id="sub_button" value="submitform" onclick="check()">Submit</button>
     </fieldset>
-    <button class="login"><a href="assign05_login.php">Login Page</a></button>
+    <button class="login"><a style="text-decoration: none" style="color: white" href="assign05_login.php">Login Page</a></button>
 </div>
 
 
