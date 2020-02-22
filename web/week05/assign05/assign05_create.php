@@ -14,6 +14,15 @@
       }
 
 
+      input#pass1, input#pass2 {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+
 
     </style>
 </head>
