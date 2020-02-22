@@ -39,7 +39,7 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
 
 
         //password_verify returns true if password is a match for hashed password in db
-        if(password_verify($pass, $hashPasswordFromDB))
+        if(password_verify($pass, $hashedPasswordFromDB))
         {
 
             //we will store this in the session so we know who is logged in
