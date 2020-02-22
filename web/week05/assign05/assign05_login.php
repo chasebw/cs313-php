@@ -8,8 +8,11 @@ session_start();
 $badlogin = false;
 
 
+echo "before if";
 if(isset($_POST["user"]) && isset($_POST["pass"]) )
 {
+
+    echo "aftr if";
 
     $user = $_POST["user"];
     $pass = $_POST["pass"];
