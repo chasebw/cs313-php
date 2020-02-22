@@ -9,6 +9,10 @@ body{
 
 }
 
+p.invalid {
+    color: red;
+}
+
 .login_box{
     width: 280px;
     position: absolute;
