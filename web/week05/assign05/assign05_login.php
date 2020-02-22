@@ -1,3 +1,78 @@
+
+
+<?php
+
+
+session_start();
+
+$badlogin = false;
+
+
+if(isset($_POST["user"]) && isset($_POST["pass"]) )
+{
+
+    $user = $_POST["user"];
+    $pass = $_POST["pass"];
+
+    require "../../db/dbConnect.php";
+    $db = get_db();
+    
+
+
+    $statement = $db->prepare("SELECT user_pass FROM public.user WHERE username = :username");
+    $statement->bindValue(':username', $user);
+
+    //statement execute returns true if works
+    //or returns false if fails
+    $result = $statement->execute();
+
+
+    //if we got something back then we do this stuff...
+    if($result)
+    {
+        //this returns a row as an (array/object)
+        $row = $statement->fetch();
+
+        //we can use the column name as a key to grab the item in that column
+        $hashedPasswordFromDB = $row["user_pass"];
+
+
+        //password_verify returns true if password is a match for hashed password in db
+        if(password_verify($pass, $hashPasswordFromDB))
+        {
+
+            //we will store this in the session so we know who is logged in
+            $_SESSION["username"] = $user;
+
+            //redirect to homepage of website
+            header("Location: assign05_options.php");
+
+        }
+        else
+        {
+            $badlogin = true;
+        }
+    }
+
+    else
+    {
+        $badlogin = true;
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,14 +90,16 @@
     <!-- Inspired  video from 'Amazing Transparent Login...' video on youtube-->
     <div class="login_box">
         <h1>Login</h1>
+        <form action="" method="POST">
         <div class="textbox">
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="Username" name="" value="">
+            <input type="text" placeholder="Username" name="user" required>
         </div>
         <div class="textbox">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" name="" value="">
+            <input type="password" placeholder="Password" name="pass" required>
         </div>
+        </form>
        <!-- <input class="btn" type="button" name="" value="Sign In"> -->
         <button class="btn"><a style="color: white" style="text-decoration: none"  href="assign05_options.php">Sign in</a></button>
         <button class="btn" type="button" name="" href='assign05_create.php' value="Create an Account">
