@@ -77,8 +77,8 @@ button#sub_button{
       <button type="button" name="submit_button" class="submit1" id="sub_button" value="submitform" onclick="check()">Submit</button>
     </fieldset>
     </form>
-    <p class="copyright">Designed by a Student</p>
-    <p class="copyright"><a class="hoverclass" href="assign05_login.php">Login Page</a></p>
+    <p class="button1">Designed by a Student</p>
+    <p class="button1"><a class="hoverclass" href="assign05_login.php">Login Page</a></p>
   </form>
 </div>
 

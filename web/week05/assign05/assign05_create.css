@@ -113,7 +113,7 @@ input[type="password"]:hover,
   resize: none;
 }
 
-#contact button[type="submit"] .submit1 {
+#contact button[type="submit"] .submit1 ,.button1 {
   cursor: pointer;
   width: 100%;
   border: none;
@@ -124,7 +124,7 @@ input[type="password"]:hover,
   font-size: 15px;
 }
 
-#contact button[type="submit"]:hover, .submit1:hover {
+#contact button[type="submit"]:hover, .submit1:hover, .button1{
   background: #43A047;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
