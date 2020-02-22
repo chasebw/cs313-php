@@ -11,18 +11,14 @@ session_start();
 $badlogin = false;
 
 
-echo "before if";
 if(isset($_POST["user"]) && isset($_POST["pass"]) )
 {
 
-    echo "aftr if";
 
     $user = $_POST["user"];
     $pass = $_POST["pass"];
 
 
-    echo "username = $user";
-    echo "password = $pass";
 
 
 
@@ -42,7 +38,7 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
     //if we got something back then we do this stuff...
     if($result)
     {
-        echo "entered result loop";
+       
         //this returns a row as an (array/object)
         $row = $statement->fetch();
 
@@ -54,7 +50,7 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
         //password_verify returns true if password is a match for hashed password in db
         if(password_verify($pass, $dbpass))
         {
-            echo "password verified";
+            
 
             //we will store this in the session so we know who is logged in
             $_SESSION["username"] = $user;
@@ -66,14 +62,13 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
         }
         else
         {
-            echo "password bad1";
+         
             $badlogin = true;
         }
     }
 
     else
     {
-        echo "password bad2";
         $badlogin = true;
     }
 
