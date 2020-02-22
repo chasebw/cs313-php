@@ -92,7 +92,7 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
     <!-- Inspired  video from 'Amazing Transparent Login...' video on youtube-->
     <div class="login_box">
         <h1>Login</h1>
-        <form action="" method="POST">
+        <form action="" method="POST" id="myform">
         <div class="textbox">
             <i class="fas fa-user"></i>
             <input type="text" placeholder="Username" name="user" required>
@@ -108,14 +108,13 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
             }
 
 
-
 ?>
             <i class="fas fa-lock"></i>
             <input type="password" placeholder="Password" name="pass" required>
         </div>
         </form>
        <!-- <input class="btn" type="button" name="" value="Sign In"> -->
-        <button class="btn"><a style="color: white" style="text-decoration: none"  href="assign05_options.php">Sign in</a></button>
+        <button class="btn"><a style="color: white" style="text-decoration: none" onclick="submitForm()" href="">Sign in</a></button>
         <button class="btn" type="button" name="" href='assign05_create.php' value="Create an Account">
             <a class="" style= 'color: aliceblue' style="text-decoration: none" href="assign05_create.php">Create An Account</a></button>
 
