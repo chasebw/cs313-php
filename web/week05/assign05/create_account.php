@@ -31,9 +31,9 @@ $db = get_db();
 $statement = $db->prepare("INSERT INTO public.user (username,user_pass) VALUES (':username',':password')");
 
 
-$statement->bindValue(':username', $user);
+$statement->bindValue(':username', "$user");
 
-$statement->bindValue(':password', $pass);
+$statement->bindValue(':password', "$pass");
 
 
 $statement->execute();
