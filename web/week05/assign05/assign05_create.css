@@ -31,6 +31,7 @@ body {
   position: relative;
 }
 
+#contact input[type="password"]
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
@@ -45,6 +46,18 @@ body {
   padding: 25px;
   margin: 150px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+.submit1{
+cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
 }
 
 #contact h3 {
@@ -69,6 +82,7 @@ fieldset {
   width: 100%;
 }
 
+#contact input[type="password"],
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
@@ -81,6 +95,7 @@ fieldset {
   padding: 10px;
 }
 
+#contact input[type="password"]:hover
 #contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
@@ -98,7 +113,7 @@ fieldset {
   resize: none;
 }
 
-#contact button[type="submit"] {
+#contact button[type="submit"] .submit1 {
   cursor: pointer;
   width: 100%;
   border: none;
@@ -109,14 +124,14 @@ fieldset {
   font-size: 15px;
 }
 
-#contact button[type="submit"]:hover {
+#contact button[type="submit"]:hover, .submit1:hover {
   background: #43A047;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
-#contact button[type="submit"]:active {
+#contact button[type="submit"]:active, .submit1:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 

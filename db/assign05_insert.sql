@@ -42,5 +42,8 @@ WHERE user_id = 1 ORDER BY record_date DESC;
 
 
 
+
+
+
 ALTER TABLE personal_record
 ALTER COLUMN record_amount VARCHAR(70);
