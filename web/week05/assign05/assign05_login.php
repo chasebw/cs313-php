@@ -19,7 +19,7 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
     
 
 
-    $statement = $db->prepare("SELECT user_pass FROM public.user WHERE username = :username");
+    $statement = $db->prepare("SELECT user_pass,user_id FROM public.user WHERE username = :username");
     $statement->bindValue(':username', $user);
 
     //statement execute returns true if works
@@ -35,6 +35,7 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
 
         //we can use the column name as a key to grab the item in that column
         $hashedPasswordFromDB = $row["user_pass"];
+        $user_id = $row["user_id"];
 
 
         //password_verify returns true if password is a match for hashed password in db
@@ -43,6 +44,7 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
 
             //we will store this in the session so we know who is logged in
             $_SESSION["username"] = $user;
+            $_SESSION["user_id"] = $user_id;
 
             //redirect to homepage of website
             header("Location: assign05_options.php");
@@ -60,7 +62,7 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
     }
 
 
-    
+
 }
 
 
@@ -96,6 +98,18 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
             <input type="text" placeholder="Username" name="user" required>
         </div>
         <div class="textbox">
+            <?php
+            
+            if ($badlogin == true)
+            {
+
+                echo "<p class ='invalid'> Invalid username or password </p>";
+
+            }
+
+
+
+?>
             <i class="fas fa-lock"></i>
             <input type="password" placeholder="Password" name="pass" required>
         </div>
