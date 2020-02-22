@@ -12,6 +12,7 @@ if(!isset($_SESSION["user_id"]))
 }
 
 $user_id = $_SESSION["user_id"];
+$username = $_SESSION["username"];
 
 /**********************************************************
  * File: results.php
@@ -61,8 +62,11 @@ $last_name = $row1['last_name'];
 #Note this statement didn't work with only a single string being input but yo uhave to put the string in quotes
 
 $statement = $db->prepare("SELECT personal_record_id, record_name, record_amount, record_date FROM personal_record 
-WHERE user_id = 1 ORDER BY record_date DESC");
+WHERE user_id = :user_id ORDER BY record_date DESC");
+$statement->bindValue(':user_id',$user_id);
+
 $statement->execute();
+
 
 
 
