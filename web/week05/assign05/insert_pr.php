@@ -36,7 +36,7 @@ $username = $_SESSION["username"];
     (record_name,record_amount,user_id,contact_id,record_date)
     VALUES 
     (:rec_name, :rec_amount,(SELECT user_id FROM public.user WHERE username = :username),
-    (SELECT contact_id FROM public.contact WHERE user_id= :user_id), '$date')");
+    (SELECT contact_id FROM public.contact WHERE user_id = :user_id), '$date')");
 
     
 

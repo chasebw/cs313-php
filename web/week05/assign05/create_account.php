@@ -18,6 +18,9 @@ if( (!isset($_POST["user"]) ) || (!isset($_POST["pass"]) ) )
 //assign values
 $user = $_POST["user"];
 $pass = $_POST["pass"];
+$first = $_POST["first"];
+$last = $_POST["last"];
+
 
 $user = htmlspecialchars($user);
 
@@ -37,6 +40,17 @@ $statement->bindValue(':password', "$pass");
 
 
 $statement->execute();
+
+
+$insertcontact = $db->prepare("INSeRT INTO contact (user_id,first_name,last_name) VALUES 
+((SELECT user_id FROM public.user WHERE username = :username),
+:first,:last)");
+
+$insertcontact->bindValue(':username',$user);
+$insertcontact->bindValue(':first',"$first");
+$insertcontact->bindValue(':last',"$last");
+
+$insertcontact->execute();
 
 
 //after we have inserted their username and password we will take them to the login.
