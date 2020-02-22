@@ -24,7 +24,7 @@ $username = $_SESSION["username"];
 
     $insertEntry->bindValue(':excer_name', "$excer_name");
     $insertEntry->bindValue(':excer_description', "$excer_description");
-    $insertEntry->bindValue(':user_id', $username);
+    $insertEntry->bindValue(':username', $username);
 
     $insertEntry->execute();
 
