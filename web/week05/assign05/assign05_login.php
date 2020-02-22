@@ -5,6 +5,14 @@
 try{
 session_start();
 
+
+if(!isset($_SESSION["user_id"]))
+{
+  header("Location: assign05_login.php");
+  die();
+
+}
+
 $badlogin = false;
 
 
@@ -114,11 +122,7 @@ catch(Exception $ex)
         <h1>Login</h1>
         <form action="" method="POST" id="myform">
         <div class="textbox">
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="Username" name="user" required>
-        </div>
-        <div class="textbox">
-            <?php
+        <?php
             
             if ($badlogin == true)
             {
@@ -129,7 +133,12 @@ catch(Exception $ex)
 
 
 ?>
-            <i class="fas fa-lock"></i>
+    
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" name="user" required>
+        </div>
+        <div class="textbox">
+                  <i class="fas fa-lock"></i>
             <input type="password" placeholder="Password" name="pass" required>
         </div>
         </form>

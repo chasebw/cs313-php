@@ -1,3 +1,18 @@
+<?php
+
+session_start();
+
+
+if(!isset($_SESSION["user_id"]))
+{
+  header("Location: assign05_login.php");
+  die();
+
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
