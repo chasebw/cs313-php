@@ -4,6 +4,7 @@
 session_start();
 
 $user_id = $_SESSION["user_id"];
+$username = $_SESSION["username"];
 
 
     require "../../db/dbConnect.php";
@@ -19,11 +20,11 @@ $user_id = $_SESSION["user_id"];
 
     try{
     $insertEntry = $db->prepare("INSERT INTO public.excercise_log (excercise_name,excercise_explain,record_date,user_id)
-    VALUES(:excer_name,:excer_description,'$date', (SELECT user_id FROM public.user WHERE username = :user_id))");
+    VALUES(:excer_name,:excer_description,'$date', (SELECT user_id FROM public.user WHERE username = :username))");
 
     $insertEntry->bindValue(':excer_name', "$excer_name");
     $insertEntry->bindValue(':excer_description', "$excer_description");
-    $insertEntry->bindValue(':user_id', $user_id);
+    $insertEntry->bindValue(':user_id', $username);
 
     $insertEntry->execute();
 
