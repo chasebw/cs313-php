@@ -28,7 +28,7 @@ $pass = password_hash($pass, PASSWORD_DEFAULT);
 require "../../db/dbConnect.php";
 $db = get_db();
 
-$statement = $db->prepare("INSERT INTO public.user (username,user_pass) VALUES (':username',':password')");
+$statement = $db->prepare("INSERT INTO public.user (username,user_pass) VALUES (:username,:password)");
 
 
 $statement->bindValue(':username', "$user");
