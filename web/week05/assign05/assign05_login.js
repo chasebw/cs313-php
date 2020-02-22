@@ -3,7 +3,7 @@
 function submitForm()
 {
 
-    var form = document.getElementById("myForm");
+    var form = document.getElementById("myform");
 
     form.submit();
 
