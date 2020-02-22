@@ -1,5 +1,11 @@
 
 <?php 
+
+session_start();
+
+$user_id = $_SESSION["user_id"];
+
+
     require "../../db/dbConnect.php";
     $db = get_db();
 
@@ -13,10 +19,11 @@
 
     try{
     $insertEntry = $db->prepare("INSERT INTO public.excercise_log (excercise_name,excercise_explain,record_date,user_id)
-    VALUES(:excer_name,:excer_description,'$date', (SELECT user_id FROM public.user WHERE username = 'username47'))");
+    VALUES(:excer_name,:excer_description,'$date', (SELECT user_id FROM public.user WHERE username = :user_id))");
 
     $insertEntry->bindValue(':excer_name', "$excer_name");
     $insertEntry->bindValue(':excer_description', "$excer_description");
+    $insertEntry->bindValue(':user_id', $user_id);
 
     $insertEntry->execute();
 

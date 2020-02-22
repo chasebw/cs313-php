@@ -1,5 +1,10 @@
 <?php 
 
+session_start();
+
+
+$user_id = $_SESSION["user_id"];
+
     require "../../db/dbConnect.php";
 
     //All the code will only run if remove is set...

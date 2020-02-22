@@ -11,6 +11,8 @@ if(!isset($_SESSION["user_id"]))
 
 }
 
+$user_id = $_SESSION["user_id"];
+
 /**********************************************************
  * File: results.php
  * Author: Chase Wilcox
@@ -58,7 +60,8 @@ $last_name = $row1['last_name'];
 
 #Note this statement didn't work with only a single string being input but yo uhave to put the string in quotes
 
-$statement = $db->prepare("SELECT excercise_id,excercise_name,excercise_explain,record_date FROM excercise_log WHERE user_id = 1 AND excercise_explain IS NOT NULL ORDER BY record_date DESC");
+$statement = $db->prepare("SELECT excercise_id,excercise_name,excercise_explain,record_date FROM excercise_log WHERE user_id = :user_id AND excercise_explain IS NOT NULL ORDER BY record_date DESC");
+$statement->bindValue(":user_id",$user_id);
 $statement->execute();
 
 
