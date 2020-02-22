@@ -14,6 +14,12 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
     $user = $_POST["user"];
     $pass = $_POST["pass"];
 
+
+    echo "username = $user";
+    echo "password = $pass";
+
+
+
     require "../../db/dbConnect.php";
     $db = get_db();
     
@@ -30,17 +36,19 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
     //if we got something back then we do this stuff...
     if($result)
     {
+        echo "entered result loop";
         //this returns a row as an (array/object)
         $row = $statement->fetch();
 
         //we can use the column name as a key to grab the item in that column
-        $hashedPasswordFromDB = $row["user_pass"];
+        $dbpass = $row["user_pass"];
         $user_id = $row["user_id"];
 
 
         //password_verify returns true if password is a match for hashed password in db
-        if(password_verify($pass, $hashedPasswordFromDB))
+        if(password_verify($pass, $dbpass))
         {
+            echo "password verified";
 
             //we will store this in the session so we know who is logged in
             $_SESSION["username"] = $user;
@@ -52,12 +60,14 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
         }
         else
         {
+            echo "password bad1";
             $badlogin = true;
         }
     }
 
     else
     {
+        echo "password bad2";
         $badlogin = true;
     }
 
