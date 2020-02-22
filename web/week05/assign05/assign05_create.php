@@ -34,6 +34,10 @@ button#sub_button:hover, .login:hover{
 }
 
 
+a {
+    color: white;
+}
+
 button#sub_button, .login{
 
   cursor: pointer;
