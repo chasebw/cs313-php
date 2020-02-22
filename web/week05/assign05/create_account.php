@@ -46,7 +46,7 @@ $insertcontact = $db->prepare("INSeRT INTO contact (user_id,first_name,last_name
 ((SELECT user_id FROM public.user WHERE username = :username),
 :first,:last)");
 
-$insertcontact->bindValue(':username',$user);
+$insertcontact->bindValue(':username',"$user");
 $insertcontact->bindValue(':first',"$first");
 $insertcontact->bindValue(':last',"$last");
 
