@@ -28,8 +28,6 @@ button#sub_button:hover, .login:hover{
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 
-  
-
 
 }
 
@@ -80,6 +78,7 @@ button#sub_button, .login{
     <fieldset>
       <button type="button" name="submit_button" class="submit1" id="sub_button" value="submitform" onclick="check()">Submit</button>
     </fieldset>
+</form>
     <button class="login"><a style="text-decoration: none" style="color: white" href="assign05_login.php">Login Page</a></button>
 </div>
 
