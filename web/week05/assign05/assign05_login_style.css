@@ -92,8 +92,8 @@ p.invalid {
 /*
 Need to fix this styling so it better then just background is black
 */
-@media screen and (max-width: 830px){
+/* @media screen and (max-width: 830px){
     body{
         background: black;
     }
-}
+} */
