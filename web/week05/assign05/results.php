@@ -106,7 +106,7 @@ $statement->execute();
 
 
 
-        html {
+        body {
             background: url('back.jpg') no-repeat center fixed;
             background-size: cover;
         }
