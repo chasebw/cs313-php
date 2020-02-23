@@ -35,6 +35,12 @@ $user_id = $_SESSION["user_id"];
       border-radius: 0;
     }
 
+    .top {
+
+      top: '';
+      position: '';
+    }
+
     i:hover{
 
       background-color: cyan;
