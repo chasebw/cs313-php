@@ -18,7 +18,10 @@ body {
   font-size: 12px;
   line-height: 30px;
   color: #777;
-  background: url(back.jpg);
+}
+
+html {    
+  background: url('back.jpg') no-repeat center fixed;     
   background-size: cover;
 }
 
