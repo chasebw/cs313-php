@@ -112,10 +112,13 @@ $statement->execute();
             padding: 0.4em 16px;
         }
 
+        html {    
+  background: url('back.jpg') no-repeat center fixed;     
+  background-size: cover;
+}
+
         body {
 
-            background: url('back.jpg') no-repeat;
-            background-size: cover;
             color: whitesmoke;
             font-size: 14px;
 

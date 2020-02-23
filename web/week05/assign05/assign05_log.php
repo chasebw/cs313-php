@@ -59,12 +59,10 @@ $db = get_db();
       margin-bottom: 5px;
     }
 
-    body {
-
-      background: url('back.jpg') no-repeat;
-      background-size: cover;
-
-    }
+    html {    
+  background: url('back.jpg') no-repeat center fixed;     
+  background-size: cover;
+}
 
     .container {
       background-color: none;
