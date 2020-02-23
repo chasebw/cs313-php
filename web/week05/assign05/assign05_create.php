@@ -47,7 +47,6 @@ button#sub_button, .login{
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
-
 }
 
 
@@ -64,7 +63,7 @@ button#sub_button, .login{
       <input placeholder="Your First Name" id="fname" name="first" type="text" tabindex="1" required autofocus>
     </fieldset>
     <fieldset>
-    <p class="error" id="error;name">This field is required</p>
+    <p class="error" id="errorlname">This field is required</p>
       <input placeholder="Your Last Name" id="lname" name="last" type="text" tabindex="2" required autofocus>
     </fieldset>
     <fieldset>
