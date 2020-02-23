@@ -59,12 +59,15 @@ button#sub_button, .login{
     <h3>Register for Account</h3>
     <h4>Create an Account</h4>
     <fieldset>
-      <input placeholder="Your First Name" name="first" type="text" tabindex="1" required autofocus>
+      <p class="error" id="errorfname">This field is required</p>
+      <input placeholder="Your First Name" id="fname" name="first" type="text" tabindex="1" required autofocus>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Last Name" name="last" type="text" tabindex="2" required autofocus>
+    <p class="error" id="error;name">This field is required</p>
+      <input placeholder="Your Last Name" id="lname" name="last" type="text" tabindex="2" required autofocus>
     </fieldset>
     <fieldset>
+    <p class="error" id="errorusername">This field is required</p>
       <input placeholder="Username" type="text" name="user" tabindex="3" required autofocus>
     </fieldset>
     <fieldset>
