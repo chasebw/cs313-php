@@ -109,7 +109,7 @@ $statement->execute();
 
 
         .w3-container {
-            padding: 0.1em 16px;
+            padding: 0.4em 16px;
         }
 
         body {
@@ -206,7 +206,7 @@ $statement->execute();
         </table>
     </div>
 
-    <p class="w3-container w3-teal confirming" style="font-size: 20px"> Personal Record Summary</p>
+    <p class="w3-container w3-teal confirming" style="font-size: 20px"> Personal Records</p>
     <form action="assign03_d.php" method="post">
         <button type="button" class="btn btn-primary"><a href="assign05_log.php">Return to Logging</a></button>
         <button type="button" class="btn btn-primary"><a href="assign05_options.php">Back to Menu</a></button>

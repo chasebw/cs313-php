@@ -116,6 +116,10 @@ $statement->execute();
 
         }
 
+        .w3-container {
+            padding: 0.4em 16px;
+        }
+
         .table-hover>tbody>tr:hover {
             background-color: #0b1816;
         }
@@ -204,7 +208,7 @@ $statement->execute();
     </div>
 
 
-    <p class="w3-container w3-teal confirming" style="font-size: 20px">Summary</p>
+    <p class="w3-container w3-teal confirming" style="font-size: 20px"> Workout Log</p>
     <form action="assign03_d.php" method="post">
         <button type="button" class="btn btn-primary"><a href="assign05_log.php">Return to Logging</a></button>
         <button type="button" class="btn btn-primary"><a href="assign05_options.php">Back to Menu</a></button>
