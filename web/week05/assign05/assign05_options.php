@@ -37,8 +37,8 @@ $user_id = $_SESSION["user_id"];
 
     .top {
 
-      top: '';
-      position: '';
+      top: unset;
+      position: unset;
     }
 
     i:hover{
