@@ -15,6 +15,7 @@
 
 
       input#pass1, input#pass2 {
+    cursor: pointer;
     width: 100%;
     border: 1px solid #ccc;
     background: #FFF;
