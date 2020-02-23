@@ -10,9 +10,8 @@ function check() {
     var user = document.getElementById("user").value;
 
     var errorfname = document.getElementById("errorfname");
-    var errorfname = document.getElementById("errorlname");
-    var errorfname = document.getElementById("errorusername");
-    var errorfname = document.getElementById("errorfname");
+    var errorlname = document.getElementById("errorlname");
+    var errorusername = document.getElementById("errorusername");
 
 
 
