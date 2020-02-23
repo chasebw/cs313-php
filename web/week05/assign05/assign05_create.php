@@ -68,7 +68,7 @@ button#sub_button, .login{
     </fieldset>
     <fieldset>
     <p class="error" id="errorusername">This field is required</p>
-      <input placeholder="Username" type="text" name="user" tabindex="3" required autofocus>
+      <input placeholder="Username" type="text" name="user" id="user" tabindex="3" required autofocus>
     </fieldset>
     <fieldset>
       <p class="error" id="error1"> Your passwords do not match</p>
