@@ -211,7 +211,7 @@ $statement->execute();
 
     <p class="w3-container w3-teal confirming" style="font-size: 20px"> Personal Records</p>
     <form action="assign03_d.php" method="post">
-        <button type="button" class="btn btn-primary"><a href="assign05_log.php">Return to Logging</a></button>
+        <button type="button" class="btn btn-primary"><a href="pr_record.php">Return to Record Records</a></button>
         <button type="button" class="btn btn-primary"><a href="assign05_options.php">Back to Menu</a></button>
 
 
