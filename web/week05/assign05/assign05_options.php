@@ -27,7 +27,6 @@ $user_id = $_SESSION["user_id"];
   <script src="https://kit.fontawesome.com/d608f5aa42.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -133,6 +132,9 @@ $user_id = $_SESSION["user_id"];
     </div>
   </div>
 </nav>
+
+
+
 
 
 
