@@ -4,11 +4,9 @@
 session_start();
 
 
-if(!isset($_SESSION["user_id"]))
-{
-  header("Location: assign05_login.php");
-  die();
-
+if (!isset($_SESSION["user_id"])) {
+    header("Location: assign05_login.php");
+    die();
 }
 
 $user_id = $_SESSION["user_id"];
@@ -63,7 +61,7 @@ $last_name = $row1['last_name'];
 
 $statement = $db->prepare("SELECT personal_record_id, record_name, record_amount, record_date FROM personal_record 
 WHERE user_id = :user_id ORDER BY record_date DESC");
-$statement->bindValue(':user_id',$user_id);
+$statement->bindValue(':user_id', $user_id);
 
 $statement->execute();
 
@@ -107,6 +105,11 @@ $statement->execute();
         footer {
             background-color: #f2f2f2;
             padding: 25px;
+        }
+
+
+        .w3-container {
+            padding: 0.1em 16px;
         }
 
         body {
