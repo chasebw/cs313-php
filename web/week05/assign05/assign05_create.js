@@ -34,7 +34,7 @@ function check() {
             errorlname.style.display = "block";
         }
 
-        if (user_name == "") {
+        if (user == "") {
             errorusername.style.display = "block";
         }
 
