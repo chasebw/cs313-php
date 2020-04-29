@@ -1,0 +1,255 @@
+For this practice exam, there are many more questions which are designed tofocus your study on specific principles that you will be tested on in the exam.As mentioned above, your actual midterm exam will only have 10 questions.
+
+
+HTTP
+
+What is http?
+-A client/ or browser sends an HTTP request to the web or DNS where it will give us the IP
+address of a web server
+-The server runs an application to process the request
+-The server returns an HTTP response to the browser
+- The client receives the response
+
+*Hyper Text Transfer Protocol
+this provides communication between web servers and web clients
+HTTP requests and HTTP responses is how communication occurs.
+
+
+
+
+
+Is http stateful or stateless?
+http is a stateless protocol meaning the serve will forget
+everthing relating to the client/browser state.
+
+stateless: does not require the server to retain information or session details
+stateful : require server to save session information
+
+ What does this mean?
+
+stateless: does not require the server to retain information or session details,fast simple design
+stateful : require server to save session information,slow, complex
+What are http status codes?
+- codes issued by a server in response to a client's request
+100 information status codes
+200 sucess
+300 redirection
+400 client error
+500 server error
+
+
+What is https?
+Hypertext transfer protocol secure
+HTTPs is encrpyted in order to increase security of data transfer
+
+
+
+HTTP COOKIES 
+What do cookies do?
+
+
+Why do we use them?
+Why do we need them?
+What are some of their advantages and disadvantages?
+What can we use in place of cookies?
+
+
+data stored in small text files on your computer
+when a webs server has sent a web page to a browser, the connection
+is shut down and the server forgets everything about the user
+
+when a user visits a page his/her name can be stored in a cookie
+next time the user visits teh page the cookie remembers his/her name
+
+we can use sessions alterantively 
+HTTP is stateless meaning it does not maintain state or hold session information
+
+By default session variables last until the user closes the browser
+session variables are available until the user closes the browser.
+
+
+adv: Make browsing internet faster, can be persistent
+disadv: invasion of privacy, files stored on hard drive, sometimes cookies are dissabled on
+clients
+
+
+PHP 
+
+What is php?
+A server side scripting language and powerful tool for making
+dynamic and interactive web pages
+php is widely used and free and efficent alternative to competitors such as microsoft ASP
+
+PHP 7 is the latest stable release
+
+
+efficently work with database
+easy maintence of code
+protect websites from attacks with 
+speed up development
+
+used to develop static, dynamic websites or web applications Hypertext Pre-Processor
+Personal Home pages
+
+alternatives are javascript or Node.js, java , Python, Ruby
+
+
+security vulnerabilities
+include 
+SQL injections
+XSS (cross site scripting) insertion of javascript code
+session hijacking
+Directory_Traversal paths access directories they arent suppose to
+Cross Site 
+
+Data should be validated at both the client and server level to protect data and 
+because a malicious attacker may be able to traverse the client input validation/ security
+
+
+
+
+
+What advantages does php have?
+What disadvantages does php have?
+What is php used for?
+What alternatives to php are there?
+What are the security strengths of php?
+What are the security vulnerabilities of php?
+Should data be validated here at the server level, or at the client level? Why?
+IT should be both, for security
+and client level validation is important because it is fast and create good user 
+experience.
+
+
+SQL
+What is a database entity?
+An entity is a single thing, person place or object, data can be stored about 
+such entities and often we use ENTITy relationship diagrams
+entities are tables
+
+entity Attributes
+defines the information about the entity that needs to be stored 
+are the coluumn names the describe it
+
+
+What is a primary key?
+A primary key is a special relational database table column or combination of columns
+for the purpose of uniquely identifying table records.
+it must contain a unique vale it cannot contain a null value.
+
+
+
+
+
+What is a foreign key?
+A entity attribute that is a primary key in another table, in that way referencing 
+a primary key in another table
+
+How are primary and foreign keys related?
+A foreign key references a primary key in another table so that the tables can be
+joined or linked in a manner with their data
+
+
+
+
+Why do these keys exist? 
+What are they used for?
+What is the syntax to create a table with a primary key?
+
+
+
+CREATE TABLE Persons (
+    ID int NOT NULL PRIMARY KEY,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int
+);
+
+
+
+
+
+What is the syntax to create a table with a foreign key?
+
+CREATE TABLE Orders (
+    OrderID int NOT NULL,
+    OrderNumber int NOT NULL,
+    PersonID int,
+    PRIMARY KEY (OrderID),
+    FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+);
+
+
+
+
+
+
+What is SQL Injection?
+it is a sql command that is commonly inserted into an input where when that code
+is run a sql command runs
+this will return/update/modify a databse which can give a person access or have them
+destroy valueable information
+
+
+
+How can you protect an application against injection attacks?
+You can use a PHP data object prepare statement with bindvalue function to help ensure
+there are sql inject in inputted values other measures can be made ....
+
+
+
+Scenario 1
+You have been asked to create an application to store people and their addresses. For simplicity, you may assume that each person has only one address. Please list the database tables you would use for these entities. For each one, list the columns (including data types) and note the primary key. For a foreign key relationship, you can simply include “references table.column”. For example:
+....
+.....
+
+
+
+
+
+CREATE TABLE people
+(
+
+people_id SERIAL PRIMARY KEY,
+name VARCHAR NOT NULL,
+address_id INT REFERENCES address(address_id) NOT NULL
+
+);
+
+
+CREATE TABLE address
+(
+
+address_id SERIAL PRIMARY KEY,
+people_id int REFERENCES people(people_id),
+street_address VARCHAR(100) NOT NULL,
+city VARCHAR(50) NOT NULL,
+state VARCHAR(50) NOT NULL
+
+
+);
+
+
+
+
+scenario 1 part 2
+Assuming you created the tables that you listed above...oWrite a query to get a single column from one of the tables oWrite a query to get all the data from one of the tables and sort it by one of the columnsoWrite a query to get all the people that live at an addressoWrite a query to show all the names of the people that live at an address AND show the address
+
+
+SELECT p.name, street_address,city,state FROM people p
+JOIN address a
+ON p.people_id = a.people_id
+WHERE address = '255 Saint street';
+
+
+
+You have been asked to create an application to track marathon events and the people that compete in them. Be aware that a marathon will be associated with multiple people and an individual will compete in zero to many marathons. List the database tables you would create for these entities. As before, for each one, list the columns (including data types), and note primary keys and foreign key relationships.
+
+Assuming you created the tables that you listed above... 
+Write a query to get a single column from one of the tables 
+Write a query to get all the data from one of the tables and sort it by one of the columns
+Write a query to show all the names of people that competed in a single marathono
+Write a query to show all the marathons a specific person has competed in
+
+
+

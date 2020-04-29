@@ -1,7 +1,5 @@
 -- CREATE DATABASE workout;
 
-
-
 CREATE TABLE public.user
 (
 
@@ -13,6 +11,11 @@ CREATE TABLE public.user
 
 );
 
+Select u.user_id, u.username, c.first_name 
+FROM public.user u 
+LEFT JOIN public.contact c
+ON u.user_id = c.user_id;
+
 
 CREATE TABLE public.contact
 (
@@ -22,8 +25,14 @@ CREATE TABLE public.contact
     last_name VARCHAR(100) NOT NULL
 
 
-
 );
+
+
+select * from public.user
+OFFSET 1
+LIMIT 2;
+
+
 
 
 CREATE TABLE public.excercise_log
@@ -53,3 +62,5 @@ CREATE TABLE public.personal_record
 
 
 );
+
+
