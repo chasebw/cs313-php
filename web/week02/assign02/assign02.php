@@ -32,6 +32,7 @@
       <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Chase</b></span> <span class="w3-hide-small w3-text-light-grey"><b>Wilcox</b></span></h1>
     </div>
   </header>
+  <p>hi</p>
 
 
   <div class="mobile_images">
