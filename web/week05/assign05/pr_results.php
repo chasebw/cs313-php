@@ -34,8 +34,6 @@ if (isset($_POST["workout_type"])) {
 
     $workout = $_POST["workout_type"];
 }
-
-
 ?>
 
 
@@ -79,7 +77,6 @@ $statement->execute();
 // }
 
 ?>
-
 
 
 <!DOCTYPE html>

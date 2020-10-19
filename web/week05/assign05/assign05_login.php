@@ -26,7 +26,7 @@ if(isset($_POST["user"]) && isset($_POST["pass"]) )
     $db = get_db();
     
 
-
+   
     $statement = $db->prepare("SELECT user_pass,user_id FROM public.user WHERE username = :username");
     $statement->bindValue(':username', $user);
 
@@ -85,10 +85,6 @@ catch(Exception $ex)
 
 
 
-
-
-
-
 ?>
 
 
@@ -104,9 +100,40 @@ catch(Exception $ex)
     <script src="https://kit.fontawesome.com/d608f5aa42.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assign05_login.js"></script>
     <title>Login Page</title>
+
+<style>
+
+#content {
+    position: relative;
+}
+#content img {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    max-width: 100px;
+    max-height: 200px;
+
+}
+
+#content img:hover {
+    opacity:80%;
+    
+}
+
+</style>
+
 </head>
 
+
+
 <body>
+
+<div max-width="200" id="content">
+    <a href="#"><img src="ribbon.png" class="ribbon"/></a>
+    <div>Coming Soon...</div>
+</div>
+
+
     <!-- Inspired  video from 'Amazing Transparent Login...' video on youtube-->
     <div class="login_box">
         <h1>Login</h1>

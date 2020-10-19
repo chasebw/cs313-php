@@ -41,6 +41,4 @@ session_start();
     header("location: pr_results.php");
     die();
 
-
-
     ?>

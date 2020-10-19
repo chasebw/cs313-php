@@ -87,8 +87,6 @@ $price = array("buddha"=>"$5000","buffalo"=>"$1500","tree"=>"$200",
     $name = array("buddha"=>"Ancient Buddha","buffalo"=>"Exotic Buffalo","tree"=>"Lone Tree",
     "dinner"=>"Dinner w/ Bednar","lillies"=>"Tiger Lilies","cat"=>"Sleeping Cat","lesson"=>"Chicken Taming Lesson","buddha1"=>"Golden Buddha");
 
-
-
 ?>
 
 

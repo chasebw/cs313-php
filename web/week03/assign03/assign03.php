@@ -143,8 +143,6 @@ session_start();
 
 
 
-
-
     if (isset($_POST["item1"])) {
       $_SESSION["item1"] = "buddha";
     }
